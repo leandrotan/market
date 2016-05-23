@@ -1,0 +1,14 @@
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_1/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00101
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_2/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00102
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_3/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00103
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_4/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00104
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_5/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00105
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_6/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00106
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_7/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00107
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_8/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00108
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_9/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00109
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_10/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00110
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_11/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00111
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_12/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00112
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_13/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00113
+hadoop fs -mv /user/sm_user/SocialMedia/Conversations/country=Egypt/20150615_14/part-00000 /user/sm_user/SocialMedia/Conversations/country=Egypt/part-00114

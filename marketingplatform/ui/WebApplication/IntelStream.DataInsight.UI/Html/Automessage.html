@@ -1,0 +1,134 @@
+﻿<script type="text/javascript" src="Html/Automessage.js"></script>
+
+<style>
+    .mainPageWrapper {
+        padding: 20px;
+        height: 100%;
+    }
+
+    #automessageEditWrapper {
+        padding: 10px;
+        margin-top: -15px;
+    }
+
+    #automessageEditWrapper > table > tbody > tr > td {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    #automessageEditWrapper > table > tbody > tr > td:nth-child(2) {
+        padding-left: 5px;
+    }
+
+    .automessage-grid-column-rules-style {
+        font-size: small;
+    }
+
+    .automessage-grid-column-rules-style .automessage-label {
+        font-weight: bold;
+    }
+
+    .automessage-grid-column-rules-style .automessage-value {
+        font-style: italic;
+    }
+
+    .gridCommandButton {
+        font-size: smaller;
+    }
+
+</style>
+
+<div id="automessage-mainwindow" class="mainPageWrapper">
+    <div id="automessage-grid"
+        data-bind="source: automessageData">
+    </div>
+</div>
+
+<script id="automessage-popup-editor" type="text/x-kendo-template">
+<div id="automessageEditWrapper">
+    <table>
+        <tr>
+            <td>Message Name: </td>
+            <td><input name="name" class="k-input k-textbox" type="text" style="width: 270px;" /></td>
+        </tr>
+        <tr>
+            <td>Workflow Type:</td>
+            <td><input name="workflow" id="automessage-workflow"
+                    data-role="dropdownlist"
+                    data-source="[ 'My Customers', 'Acquisition' ]"
+                    data-option-label="Select an option..." 
+                    data-change="automessagePopupHandlers.messsageTemplateSelection"
+                    /></td>
+        </tr>
+        <tr>
+            <td>Sentiment:</td>
+            <td><input name="sentiment"
+                    id="automessage-sentiment"
+                    data-role="dropdownlist"
+                    data-source="[ 'Positive', 'Neutral', 'Negative', 'Severe', 'Potential Churner' ]"
+                    data-option-label="Select an option..." 
+                    data-change="automessagePopupHandlers.messsageTemplateSelection"
+                    /></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td><input name="category" id="automessage-category"
+                    data-role="dropdownlist"
+                    data-source="automessage_test_categories" 
+                    data-option-label="Select an option..." 
+                    data-value-field="parentID"
+                    data-text-field="parentID"
+                    data-change="automessagePopupHandlers.messsageTemplateSelection"
+                    /></td>
+        </tr>
+        <tr>
+            <td>Sub Cateogry:</td>
+            <td><input name="subcategory" id="automessage-subcategory"
+                    data-role="dropdownlist"
+                    data-source="automessage_test_subcategories" 
+                    data-option-label="Select an option..."
+                    data-cascade-from="automessage-category"    
+                    data-value-field="value"
+                    data-text-field="value"
+                    data-change="automessagePopupHandlers.messsageTemplateSelection"
+                    /></td>
+        </tr>
+    </table>
+    <div>
+        <span>Template</span>
+        <textarea name="message" id="automessage-template-text" style="width: 100%" class="k-input k-textbox" rows="4" />
+        <div style="margin-top: 3px;">
+            <button type="button" id="add-user-token" data-role="button" data-click="automessagePopupHandlers.addUserToken" data-image-url="Images/icon-at.png" style="font-size: smaller;">Add User Token</button>
+            <input name="addQuestionarie" style="font-size: smaller; width: 170px;"
+                data-role="dropdownlist"
+                data-filter="contains"
+                data-source="automessage_test_questionaries"
+                data-option-label="Add Questionarie Token"
+                data-value-field="value"
+                data-text-field="name"
+                data-change="automessagePopupHandlers.selectQuestionarie"
+                />
+        </div>
+    </div>
+</div>
+</script>
+
+<script id="automessage-grid-column-rules" type="text/x-kendo-template">
+<div class="automessage-grid-column-rules-style">
+    <span class="automessage-label">Sentiment: </span>
+    <span class="automessage-value">#: sentiment #</span>
+    <br/>
+    <span class="automessage-label">Cateogry/Subcategory: </span>
+    <span class="automessage-value">#: category # / #: subcategory #</span>
+</div>
+</script>
+
+<script id="automessage-grid-column-summary" type="text/x-kendo-template">
+<div class="automessage-grid-column-rules-style">
+    <span class="automessage-label">Sent messages: </span>
+    <span class="automessage-value">#: sent #</span>
+    <br/>
+    <span class="automessage-label">Replied messages: </span>
+    <span class="automessage-value">#: reply #</span>
+</div>
+</script>

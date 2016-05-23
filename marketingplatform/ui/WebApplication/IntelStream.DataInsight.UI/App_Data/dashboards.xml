@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DashboardGroups xmlns:json="http://james.newtonking.com/projects/json" >
+  <DashboardGroup name="Social Media Analytics">
+    <!--Dashboard json:Array='true' name="Social Media Overview" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SocialMediaOverview"  >
+      <Sheet name="Social Media Sentiment Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SocialMediaSentimentTrend"/>
+      <Sheet name="Sentiment Distribution" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SentimentDistribution"/>
+      <Sheet name="Complaints Summary" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/ComplaintsSummary"/>
+
+      <Sheet name="Top Topics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/TopTopics"/>
+      <Sheet name="Top 10 Topic Distribution" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/Top10TopicDistribution"/>
+      <Sheet name="Influencers Monitoring" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/InfluencersMonitoring"/>
+      <Sheet name="Key Accounts Monitoring" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/KeyAccountsMonitoring"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SocialMediaCommentsDetails"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SourceDataView_2"/>
+    </Dashboard-->
+	<Dashboard json:Array='true' name="Social Media Overview" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SocialMediaOverview"  >
+      <Sheet name="Social Media Sentiment Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SocialMediaSentimentTrend"/>
+      <Sheet name="Sentiment Distribution" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SentimentDistribution"/>
+      <Sheet name="Complaints Summary" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/ComplaintsSummary"/>
+
+      <Sheet name="Top Topics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/TopTopics"/>
+      <Sheet name="Top 10 Topic Distribution" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/Top10TopicDistribution"/>
+      <Sheet name="Influencers Monitoring" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/InfluencersMonitoring"/>
+      <Sheet name="Key Accounts Monitoring" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/KeyAccountsMonitoring"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SocialMediaCommentsDetails"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SourceDataView_2"/>
+    </Dashboard>
+    <!--Dashboard json:Array='true' name="Map View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/MapView"  >
+		<Sheet name="Orange Social Media Concentration by Area" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/OrangeSocialMediaConcentrationbyArea"/>
+		<Sheet name="Orange Bad Sentiment Concentration by Area" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/OrangeBadSentimentConcentrationbyArea"/>
+    </Dashboard-->
+	
+    <!--Dashboard json:Array='true' name="Network Tweets Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/NetworkTweetsInsight"  >
+      <Sheet name="Network Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/NetworkTweetsTrend"/>
+      <Sheet name="Network Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/MonthlyStatistics"/>
+      <Sheet name="Network Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/NetworkMonthlyView"/>
+      <Sheet name="Network Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/Tweetsfootprint"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SocialMediaCommentsDetails_1"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Business Affairs Tweets Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/BusinessAffairsTweetsInsight"  >
+      <Sheet name="Business Affairs Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/BusinessAffairsTweetsTrend"/>
+      <Sheet name="Business Affairs Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/MonthlyStatistics_1"/>
+      <Sheet name="Business Affairs Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/BusinessAffairsMonthlyView"/>
+      <Sheet name="Business Affairs Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/Tweetsfootprint_1"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SocialMediaCommentsDetails_2"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SourceDataView_1"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Customer Care Tweets Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/CustomerCareTweetsInsight"  >
+      <Sheet name="Customer Care Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/CustomerCareTweetsTrend"/>
+      <Sheet name="Customer Care Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/MonthlyStatistics_3"/>
+      <Sheet name="Customer Care Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/CustomerCareMonthlyView"/>
+      <Sheet name="Customer Care Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/Tweetsfootprint_3"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SocialMediaCommentsDetails_3"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsAlfa/SourceDataView_3"/>
+    </Dashboard-->
+	
+	<Dashboard json:Array='true' name="Network Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/NetworkInsight"  >
+      <Sheet name="Network Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/NetworkTweetsTrend"/>
+      <Sheet name="Network Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/MonthlyStatistics"/>
+      <Sheet name="Network Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/NetworkMonthlyView"/>
+      <Sheet name="Network Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/Tweetsfootprint"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SocialMediaCommentsDetails_1"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Business Affairs Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/BusinessAffairsInsight"  >
+      <Sheet name="Business Affairs Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/BusinessAffairsTweetsTrend"/>
+      <Sheet name="Business Affairs Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/MonthlyStatistics_1"/>
+      <Sheet name="Business Affairs Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/BusinessAffairsMonthlyView"/>
+      <Sheet name="Business Affairs Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/Tweetsfootprint_1"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SocialMediaCommentsDetails_2"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SourceDataView_1"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Customer Care Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/CustomerCareInsight"  >
+      <Sheet name="Customer Care Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/CustomerCareTweetsTrend"/>
+      <Sheet name="Customer Care Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/MonthlyStatistics_2"/>
+      <Sheet name="Customer Care Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/CustomerCareMonthlyView"/>
+      <Sheet name="Customer Care Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/Tweetsfootprint_2"/>
+      <Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SocialMediaCommentsDetails_3"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsLBTouch/SourceDataView_2"/>
+    </Dashboard>
+  </DashboardGroup>
+  <!--DashboardGroup name="Benchmark Analytics" >
+    <Dashboard json:Array='true' name="Social Media Sentiment Benchmark" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/SocialMediaSentimentsBenchmark">
+      <Sheet name="Alfa Telecom Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomSocialMediaActivitiesTrend"/>
+      <Sheet name="Alfa Telecom Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomSocialMediaSentiment"/>
+      <Sheet name="Touch Lebanon Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonSocialMediaActivitiesTrend"/>
+      <Sheet name="Touch Lebanon Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonSocialMediaSentiment"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/DetailedSentimentBenchmarkNetwork">
+      <Sheet name="Alfa Telecom Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomBadSentimentDistribution"/>
+      <Sheet name="Alfa Telecom Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomTweetsNetwork"/>
+      <Sheet name="Touch Lebanon Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonBadSentimentDistribution"/>
+      <Sheet name="Touch Lebanon Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonTweetsNetwork"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/DetailedSentimentBenchmarkBusinessAffairs">
+      <Sheet name="Alfa Telecom Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomBadSentimentDistributionBusinessAffairs"/>
+      <Sheet name="Alfa Telecom Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomTweetsBusinessAffairs"/>
+      <Sheet name="Touch Lebanon Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonBadSentimentDistributionBusinessAffairs"/>
+      <Sheet name="Touch Lebanon Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonTweetsBusinessAffairs"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/DetailedSentimentBenchmarkCustomerCare">
+      <Sheet name="Alfa Telecom Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomBadSentimentDistributionCustomerCare"/>
+      <Sheet name="Alfa Telecom Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/AlfaTelecomTweetsCustomerCare"/>
+      <Sheet name="Touch Lebanon Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonBadSentimentDistributionCustomerCare"/>
+      <Sheet name="Touch Lebanon Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/TouchLebanonTweetsCustomerCare"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLB/SourceDataView"/>
+    </Dashboard>
+  </DashboardGroup-->
+  <DashboardGroup name="Benchmark Analytics" >
+    <Dashboard json:Array='true' name="Social Media Sentiment Benchmark" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SocialMediaSentimentBenchmark">
+	  <Sheet name="Social Media Outlet Followers Tracking (TOUCH)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SocialMediaOutletFollowersTrackingTOUCH"/>
+	  <Sheet name="Social Media Followers Insight (TOUCH)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SocialMediaFollowersInsightTOUCH"/>	
+	  <Sheet name="Social Media Outlet Followers Tracking (ALFA)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SocialMediaOutletFollowersTrackingALFA"/>
+	  <Sheet name="Social Media Followers Insight (ALFA)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SocialMediaFollowersInsightALFA"/>		
+	  <Sheet name="Touch Lebanon Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonSocialMediaActivitiesTrend"/>
+      <Sheet name="Touch Lebanon Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonSocialMediaSentiment"/>
+      <Sheet name="Alfa Telecom Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomSocialMediaActivitiesTrend"/>
+      <Sheet name="Alfa Telecom Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomSocialMediaSentiment"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/DetailedSentimentBenchmarkNetwork">
+	  <Sheet name="Touch Lebanon Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonSentimentDistributionNetwork"/>
+      <Sheet name="Touch Lebanon Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonTweetsNetwork"/>
+      <Sheet name="Alfa Telecom Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomSentimentDistributionNetwork"/>
+      <Sheet name="Alfa Telecom Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomTweetsNetwork"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/DetailedSentimentBenchmarkBusinessAffairs">
+      <Sheet name="Touch Lebanon Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonSentimentDistributionBusinessAffairs"/>
+      <Sheet name="Touch Lebanon Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonTweetsBusinessAffairs"/>
+	  <Sheet name="Alfa Telecom Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomSentimentDistributionBusinessAffairs"/>
+      <Sheet name="Alfa Telecom Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomTweetsBusinessAffairs"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/DetailedSentimentBenchmarkCustomerCare">
+	  <Sheet name="Touch Lebanon Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonSentimentDistributionCustomerCare"/>
+      <Sheet name="Touch Lebanon Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/TouchLebanonTweetsCustomerCare"/>
+      <Sheet name="Alfa Telecom Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomSentimentDistributionCustomerCare"/>
+      <Sheet name="Alfa Telecom Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/AlfaTelecomTweetsCustomerCare"/>
+      <Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkLBTouch/SourceDataView"/>
+    </Dashboard>
+  </DashboardGroup>
+  <!--DashboardGroup name="Competitor Customer Acquisition" >
+    <Dashboard json:Array='true' name="Customer Acquisition Overview" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/CustomerAquisitionOverview">
+      <Sheet name="Network Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/NetworkLeads"/>
+      <Sheet name="Social Media Network Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/SocialMediaNetworkComments"/>
+      <Sheet name="Acquisition Insight (Network)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/AcquisitionInsightNetwork"/>
+      <Sheet name="Business Affairs Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/BusinessAffairsLeads"/>
+      <Sheet name="Social Media Business Affairs Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/SocialMediaBusinessAffairsComments"/>
+      <Sheet name="Acquisition Insight (Business Insight)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/AcquisitionInsightBusinessAffairs"/>
+      <Sheet name="Customer Care Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/CustomerCareLeads"/>
+      <Sheet name="Social Media Customer Care Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/SocialMediaCustomerCareComments"/>
+      <Sheet name="Acquisition Insight (Customer Care)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverviewLebanon/AcquisitionInsightCustomerCare"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Acquisition Network" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network_0/Acquisition-Network">
+      <Sheet name="Touch Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network_0/TouchAcquisitionsfromComplainingCompetitorCustomers"/>
+      <Sheet name="Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network_0/PotentialCustomers"/>
+      <Sheet name="Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network_0/AcquisitionSummary"/>
+      <Sheet name="Touch Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network_0/TouchSocialMediaComments"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Acquisition Business Affairs" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs/Acquisition-BusinessAffairs_1">
+      <Sheet name="Touch Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs/TouchAcquisitionsfromComplainingCompetitorCustomers"/>
+      <Sheet name="Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs/PotentialCustomers"/>
+      <Sheet name="Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs/AcquisitionSummary"/>
+      <Sheet name="Touch Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs/TouchSocialMediaComments"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Acquisition Customer Care" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare_0/Acquisition-CustomerCare_1">
+      <Sheet name="Touch Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare_0/TouchAcquisitionsfromComplainingCompetitorCustomers"/>
+      <Sheet name="Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare_0/PotentialCustomers"/>
+      <Sheet name="Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare_0/AcquisitionSummary"/>
+      <Sheet name="Touch Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare_0/TouchSocialMediaComments"/>
+    </Dashboard>
+  </DashboardGroup-->
+  <DashboardGroup name="Competitor Customer Acquisition" >
+    <Dashboard json:Array='true' name="Customer Acquisition Overview" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/CustomerAquisitionOverview">
+      <Sheet name="Network Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/NetworkLeads"/>
+      <Sheet name="Social Media Network Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/SocialMediaNetworkComments"/>
+      <Sheet name="Acquisition Insight (Network)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/AcquisitionInsightNetwork"/>
+      <Sheet name="Business Affairs Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/BusinessAffairsLeads"/>
+      <Sheet name="Social Media Business Affairs Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/SocialMediaBusinessAffairsComments"/>
+      <Sheet name="Acquisition Insight (Business Insight)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/AcquisitionInsightBusinessAffairs"/>
+      <Sheet name="Customer Care Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/CustomerCareLeads"/>
+      <Sheet name="Social Media Customer Care Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/SocialMediaCustomerCareComments"/>
+      <Sheet name="Acquisition Insight (Customer Care)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-LBTouch/AcquisitionInsightCustomerCare"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Acquisition Network" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-LBTouch/Acquisition-Network">
+      <Sheet name="Alfa Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-LBTouch/AlfaAcquisitionsfromComplainingCompetitorCustomers"/>
+      <Sheet name="Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-LBTouch/AlfaPotentialCustomers"/>
+      <Sheet name="Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-LBTouch/AlfaAcquisitionSummary"/>
+      <Sheet name="Alfa Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-LBTouch/AlfaSocialMediaComments"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Acquisition Business Affairs" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-LBTouch/Acquisition-BusinessAffairs">
+      <Sheet name="Alfa Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-LBTouch/AlfaAcquisitionsfromComplainingCompetitorCustomers"/>
+      <Sheet name="Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-LBTouch/AlfaPotentialCustomers"/>
+      <Sheet name="Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-LBTouch/AlfaAcquisitionSummary"/>
+      <Sheet name="Alfa Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-LBTouch/AlfaSocialMediaComments"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Acquisition Customer Care" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-LBTouch/Acquisition-CustomerCare">
+      <Sheet name="Alfa Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-LBTouch/AlfaAcquisitionsfromComplainingCompetitorCustomers"/>
+      <Sheet name="Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-LBTouch/AlfaPotentialCustomers"/>
+      <Sheet name="Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-LBTouch/AlfaAcquisitionSummary"/>
+      <Sheet name="Alfa Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-LBTouch/AlfaSocialMediaComments"/>
+    </Dashboard>
+  </DashboardGroup>
+  <DashboardGroup name="Auto-Messaging">
+    <Page json:Array='true' name="Auto-Message Configuration" url="Html/Automessage.html" />
+    <Page json:Array='true' name="Contacts Tracking Board" url="Html/ContactBoard.html" />
+  </DashboardGroup>
+</DashboardGroups>

@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\nex-web-25\c$\inetpub\wwwroot\data_insight_pilot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/dashboards.xml">
+      <publishTime>04/15/2015 10:13:36</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>04/13/2015 15:55:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/13/2015 15:55:47</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/13/2015 15:55:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/13/2015 15:55:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/13/2015 15:55:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>04/13/2015 15:55:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/13/2015 15:55:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>04/13/2015 15:55:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>04/13/2015 15:55:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>04/13/2015 15:55:45</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>04/13/2015 15:55:50</publishTime>
+    </File>
+    <File Include="bin/Wicom.CIM.dll">
+      <publishTime>04/30/2015 11:32:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/editor.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/imagebrowser.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/indeterminate.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/loading-image.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/loading.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/loading_2x.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/markers.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/markers_2x.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/slider-h.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/slider-v.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/sprite.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/sprite_2x.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/sprite_kpi.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Bootstrap/sprite_kpi_2x.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo.bootstrap.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo.common-bootstrap.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo.dataviz.bootstrap.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo.dataviz.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/editor.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/imagebrowser.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/indeterminate.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/loading-image.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/loading.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/loading_2x.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/markers.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/markers_2x.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/slider-h.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/slider-v.gif">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/sprite.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/sprite_2x.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/sprite_kpi.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/Bootstrap/sprite_kpi_2x.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/kendo.bootstrap.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/kendo.common-bootstrap.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/kendo.dataviz.bootstrap.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/kendo/kendo.dataviz.min.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Images/intelStream_data_insight.png">
+      <publishTime>04/30/2015 11:15:48</publishTime>
+    </File>
+    <File Include="Images/intelStream_data_insight_big.png">
+      <publishTime>04/30/2015 11:28:18</publishTime>
+    </File>
+    <File Include="Images/logo-DataInsight.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Images/logo-intelStream.png">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Scripts/app/ajaxlogin.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/app/reports.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/jsonselect.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/kendo/jszip.min.js">
+      <publishTime>03/30/2015 13:03:30</publishTime>
+    </File>
+    <File Include="Scripts/kendo/kendo.all.min.js">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Scripts/kendo/kendo.aspnetmvc.min.js">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Scripts/kendo/messages/kendo.messages.en-US.min.js">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Scripts/kendo/pako_deflate.min.js">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Scripts/tableau_v8.debug.js">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Scripts/tableau_v8.js">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>04/30/2015 11:26:39</publishTime>
+    </File>
+    <File Include="Views/Login/Login.cshtml">
+      <publishTime>04/30/2015 11:29:27</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>03/30/2015 13:03:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/21/2015 12:07:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

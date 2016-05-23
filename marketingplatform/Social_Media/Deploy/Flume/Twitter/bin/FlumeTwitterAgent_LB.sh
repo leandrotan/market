@@ -1,0 +1,2 @@
+#!/bin/bash
+/etc/init.d/flume-agent $1 /home/sm_user/Social_Media/Twitter/conf/flumeTwitter_lb.properties TwitterAgent_LB --classpath /home/sm_user/Social_Media/Twitter/lib/*: -Dflume.root.logger=INFO,LOGFILE -Dflume.log.file=FlumeTwitterAgent_LB.log

@@ -1,0 +1,121 @@
+﻿<script type="text/javascript" src="Html/ContactBoard.js"></script>
+<style>
+    .mainPageWrapper {
+        padding: 20px;
+        height: 100%;
+    }
+
+    .modal-window
+    {
+        width: 850px;
+        height: 750px;
+        display: none;
+        background-color: #F7F7F7;
+    }
+
+    .tweets-modalwindow-content {
+        padding: 10px;
+        margin-top: -15px;
+    }
+    .tweets-modalwindow-content > table > tbody > tr > td {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .tweets-modalwindow-content > table > tbody > tr > td:nth-child(2) {
+        padding-left: 5px;
+    }
+
+</style>
+
+<!-- Main pop up -->
+<div id="contact-track-mainwindow" class="mainPageWrapper">
+    <div id="tabstrip">
+        <ul>
+            <li class="k-state-active">My Customers</li>
+            <li>Acquisitions</li>
+        </ul>
+        <div id="tabMyCustomers">
+            <div id="contact-track-grid-toolbar"></div>                                                                      
+            <div id="contact-track-grid" data-role="grid" data-bind="source:contactBoardData"></div> 
+        </div>
+        <div id="tabAcquisitions">
+            <div id="contact-track-grid-acq-toolbar"></div>                                                                      
+            <div id="contact-track-grid-acq" data-role="grid" data-bind="source:contactBoardDataAcq"></div> 
+        </div>
+        </div>
+    <script id="contact-track-grid-column-rules" type="text/x-kendo-template">
+<div>
+    <span style="font-weight: bold">Included: </span>
+    <span style="font-style: italic">#=(data.questionnaire_name) ? data.questionnaire_name : 'No' #</span>
+    <br/>
+    <span style="font-weight: bold">Answered: </span>
+    <span style="font-style: italic; font-size:85%;">#=(data.questionnaire_reply_date) ? data.questionnaire_reply_date : 'No' #</span>
+</div>
+</script>
+</div>
+<!-- Details pop up html to be injected. -->
+<div id="contactBoardDetailsPH"></div>
+
+<!-- Close pop up -->
+<div id="close-modalwindow" class="k-popup-edit-form k-window-content k-content" style="display: none">
+    <div class="k-edit-form-container">
+        <div class="tweets-modalwindow-content">
+            <table>
+                <tr>
+                    <td>User Account:</td>
+                    <td><textarea id="users-text-area" style="width:285px;" class="k-input k-textbox" rows="2" readonly></textarea></td>
+                </tr>
+            </table>
+            <div>
+                <span>Comments:</span>
+                <textarea id="comments-text-area" style="display:block; width:100%;" required data-required-msg="*" class="k-input k-textbox" rows="8"></textarea>
+            </div>
+        </div>
+        <div class="k-edit-buttons k-state-default">
+            <a class="k-button k-button-icontext k-primary k-grid-update" href="#" id="close-ok-button"><span class="k-icon k-update"></span>Ok</a>
+            <a class="k-button k-button-icontext k-grid-cancel" href="#" id="close-cancel-button"><span class="k-icon k-cancel"></span>Cancel</a>
+            <div>&nbsp;</div>
+            <span id="errorMessage" style="display: none;">Please enter a comment on reasons to perform close.</span>
+        </div>
+    </div>
+</div>
+
+<!-- New tweets pop up -->
+<div id="new-tweets-modalwindow" class="k-popup-edit-form k-window-content k-content"  style="display:none">
+    <div class="k-edit-form-container">
+        <div class="tweets-modalwindow-content">
+            <table>
+                <tr>
+                    <td>Destination:</td>
+                    <td><textarea id="destination-text-area" class="k-input k-textbox" style="width: 270px;" rows="2" readonly="readonly"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Sentiment:</td>
+                    <td><input id="sentiment" /></td>
+                </tr>
+                <tr>
+                    <td>Category:</td>
+                    <td><input id="category" /></td>
+                </tr>
+                <tr>
+                    <td>Sub Category:</td>
+                    <td><input id="subcategory" /></td>
+                </tr>
+            </table>
+            <div>
+                <span>Tweet</span>
+                <textarea id="tweet-text-area" style="display:block; width:100%;" class="k-input k-textbox" rows="5"></textarea>
+                <div style="margin-top: 3px;">
+                    <button type="button" id="new-tweets-add-user-token" style="font-size: smaller;">Add User Token</button>
+                    <input id="new-tweets-add-questionarie-token" style="font-size: smaller; width: 170px;" />
+                </div>
+            </div>
+        </div>
+
+        <div class="k-edit-buttons k-state-default">
+            <a class="k-button k-button-icontext k-primary k-grid-update" href="#" id="new-tweets-ok-button"><span class="k-icon k-update"></span>Send</a>
+            <a class="k-button k-button-icontext k-grid-cancel" href="#" id="new-tweets-cancel-button"><span class="k-icon k-cancel"></span>Cancel</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1 @@
+bin/spark-submit --class com.wicom.spark.streaming.twitter.PublicStream --jars SparkTwitterStreaming-0.0-SNAPSHOT.jar,spark-streaming-twitter_2.10-1.2.1.jar,twitter4j-core-3.0.3.jar,twitter4j-stream-3.0.3.jar,hive-hcatalog-streaming-0.13.0.jar,hive-exec-1.0.0.jar,hive-hcatalog-core-0.13.0.2.1.5.0-695.jar  SparkTwitterStreaming-0.0.1-SNAPSHOT.jar

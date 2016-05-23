@@ -1,0 +1,10 @@
+--DROP TABLE storm_measure_dictionary;
+
+CREATE TABLE storm_measure_dictionary (
+	"measure_sid" Integer NOT NULL,
+	"measure_name" Varchar(200),
+	"measure_type" Varchar(200),
+	"measure_column_index" Integer,
+	"fact_table" Varchar(200),
+	"time_created" Timestamp NOT NULL DEFAULT now()
+)

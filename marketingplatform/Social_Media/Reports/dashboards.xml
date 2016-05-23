@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DashboardGroups xmlns:json="http://james.newtonking.com/projects/json" >
+  <DashboardGroup name="Social Media Analytics">
+    <Dashboard json:Array='true' name="Social Media Overview" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SocialMediaOverview"  >
+		<Sheet name="Social Media Sentiment Trend" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SocialMediaSentimentTrend"/>
+		<Sheet name="Sentiment Distribution" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SentimentDistribution"/>
+		<Sheet name="Monthly Complaints" url="/t/WRD10-social-media/views/SocialMediaAnalytics/ComplaintsSummary"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Map View" url="/t/WRD10-social-media/views/SocialMediaAnalytics/MapView"  >
+		<Sheet name="Orange Social Media Concentration by Area" url="/t/WRD10-social-media/views/SocialMediaAnalytics/OrangeSocialMediaConcentrationbyArea"/>
+		<Sheet name="Orange Bad Sentiment Concentration by Area" url="/t/WRD10-social-media/views/SocialMediaAnalytics/OrangeBadSentimentConcentrationbyArea"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Network Tweets Insight" url="/t/WRD10-social-media/views/SocialMediaAnalytics/NetworkTweetsInsight"  >
+		<Sheet name="Network Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalytics/NetworkTweetsTrend"/>
+		<Sheet name="Network Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalytics/MonthlyStatistics"/>
+		<Sheet name="Network Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalytics/NetworkMonthlyView"/>
+		<Sheet name="Network Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalytics/Tweetsfootprint"/>
+		<Sheet name="Network Subscribers Details" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SubscribersDetails"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SourceDataView"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Business Affairs Tweets Insight" url="/t/WRD10-social-media/views/SocialMediaAnalytics/BusinessAffairsTweetsInsight"  >
+		<Sheet name="Business Affairs Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalytics/BusinessAffairsTweetsTrend"/>
+		<Sheet name="Business Affairs Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalytics/MonthlyStatistics_1"/>
+		<Sheet name="Business Affairs Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalytics/BusinessAffairsMonthlyView"/>
+		<Sheet name="Business Affairs Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalytics/Tweetsfootprint_1"/>
+		<Sheet name="Business Affairs Subscribers Details" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SubscribersDetails_1"/>	
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SourceDataView_1"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Customer Care Tweets Insight" url="/t/WRD10-social-media/views/SocialMediaAnalytics/CustomerCareTweetsInsight"  >
+		<Sheet name="Customer Care Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalytics/CustomerCareTweetsTrend"/>
+		<Sheet name="Customer Care Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalytics/MonthlyStatistics_2"/>
+		<Sheet name="Customer Care Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalytics/CustomerCareMonthlyView"/>
+		<Sheet name="Customer Care Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalytics/Tweetsfootprint_2"/>
+		<Sheet name="Customer Care Subscribers Details" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SubscribersDetails_2"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalytics/SourceDataView_2"/>
+	</Dashboard>
+  </DashboardGroup>
+  <DashboardGroup name="Benchmark Analytics" >
+    <Dashboard json:Array='true' name="Social Media Sentiment Benchmark" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/SocialMediaSentimentsBenchmark">
+		<Sheet name="Orange Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeSocialMediaActivitiesTrend"/>
+		<Sheet name="Orange Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeSocialMediaSentiment"/>
+		<Sheet name="O2 Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2SocialMediaActivitiesTrend"/>
+		<Sheet name="O2 Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2SocialMediaSentiment"/>
+		<Sheet name="Vodafone Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneSocialMediaActivitiesTrend"/>
+		<Sheet name="Vodafone Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneSocialMediaSentiment"/>
+		<Sheet name="Hutchinson 3G Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GSocialMediaActivitiesTrend"/>
+		<Sheet name="Hutchinson Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GSocialMediaSentiment"/>
+		<Sheet name="T-Mobile Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileSocialMediaActivitiesTrend"/>
+		<Sheet name="T-Mobile Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileSocialMediaSentiment"/>
+		<Sheet name="Virgin Media Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaSocialMediaActivitiesTrend"/>
+		<Sheet name="Virgin Media Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaSocialMediaSentiment"/>		
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/DetailedSentimentBenchmarkNetwork">
+		<Sheet name="Orange Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeBadSentimentDistribution"/>
+		<Sheet name="Orange Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeTweetsNetwork"/>
+		<Sheet name="O2 Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2BadSentimentDistribution"/>
+		<Sheet name="O2 Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2TweetsNetwork"/>
+		<Sheet name="Vodafone Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneBadSentimentDistribution"/>
+		<Sheet name="Vodafone Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneTweetsNetwork"/>
+		<Sheet name="Hutchinson 3G Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GBadSentimentDistribution"/>
+		<Sheet name="Hutchinson 3G Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GTweetsNetwork"/>
+		<Sheet name="T-Mobile Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileBadSentimentDistribution"/>
+		<Sheet name="T-Mobile Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileTweetsNetwork"/>
+		<Sheet name="Virgin Media Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaBadSentimentDistribution"/>
+		<Sheet name="Virgin Media Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaTweetsNetwork"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/SourceDataView"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/DetailedSentimentBenchmarkBusinessAffairs">
+		<Sheet name="Orange Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeBadSentimentDistributionBusinessAffairs"/>
+		<Sheet name="Orange Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeTweetsBusinessAffairs"/>
+		<Sheet name="O2 Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2BadSentimentDistributionBusinessAffairs"/>
+		<Sheet name="O2 Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2TweetsBusinessAffairs"/>
+		<Sheet name="Vodafone Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneBadSentimentDistributionBusinessAffairs"/>
+		<Sheet name="Vodafone Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneTweetsBusinessAffairs"/>
+		<Sheet name="Hutchinson 3G Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GBadSentimentDistributionBusinessAffairs"/>
+		<Sheet name="Hutchinson 3G Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GTweetsBusinessAffairs"/>
+		<Sheet name="T-Mobile Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileBadSentimentDistributionBusinessAffairs"/>
+		<Sheet name="T-Mobile Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileTweetsBusinessAffairs"/>
+		<Sheet name="Virgin Media Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaBadSentimentDistributionBusinessAffairs"/>
+		<Sheet name="Virgin Media Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaTweetsBusinessAffairs"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/SourceDataView"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/DetailedSentimentBenchmarkCustomerCare">
+		<Sheet name="Orange Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeBadSentimentDistributionCustomerCare"/>
+		<Sheet name="Orange Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/OrangeTweetsCustomerCare"/>
+		<Sheet name="O2 Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2BadSentimentDistributionCustomerCare"/>
+		<Sheet name="O2 Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/O2TweetsCustomerCare"/>
+		<Sheet name="Vodafone Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneBadSentimentDistributionCustomerCare"/>
+		<Sheet name="Vodafone Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VodafoneTweetsCustomerCare"/>
+		<Sheet name="Hutchinson 3G Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GBadSentimentDistributionCustomerCare"/>
+		<Sheet name="Hutchinson 3G Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/Hutchinson3GTweetsCustomerCare"/>
+		<Sheet name="T-Mobile Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileBadSentimentDistributionCustomerCare"/>
+		<Sheet name="T-Mobile Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/T-MobileTweetsCustomerCare"/>
+		<Sheet name="Virgin Media Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaBadSentimentDistributionCustomerCare"/>
+		<Sheet name="Virgin Media Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/VirginMediaTweetsCustomerCare"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmark/SourceDataView"/>
+	</Dashboard>
+  </DashboardGroup>
+  <DashboardGroup name="Competitor Customer Acquisition" >
+	<Dashboard json:Array='true' name="Customer Acquisition Overview" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview/CustomerAcquisitionOverview">
+		<Sheet name="Network Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview/NetworkLeads"/>
+		<Sheet name="Network Acquisition Analysis" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview/NetworkAcquisitionAnalysis"/>
+		<Sheet name="Business Affairs Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview/BusinessAffairsLeads"/>
+		<Sheet name="Business Affairs Acquisition Analysis" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview/BusinessAffairsAcquisitionAnalysis"/>
+		<Sheet name="Customer Care Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview/CustomerCareLeads"/>
+		<Sheet name="Customer Care Acquisition Analysis" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview/CustomerCareAcquisitionAnalysis"/>
+ 	</Dashboard>
+	<Dashboard json:Array='true' name="Acquisition (Network - Voice)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/Acquisition-NetworkVoice">
+		<Sheet name="O2 Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/O2AcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="O2 Tweets (Network Voice)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/O2Tweets-NetworkVoice"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Tweets (Network Voice)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/VodafoneTweets-NetworkVoice"/>
+		<Sheet name="Hutchinson 3G Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/Hutchinson3GAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Hutchinson Tweets (Network Voice)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/HutchinsonTweets-NetworkVoice"/>
+		<Sheet name="T-Mobile Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/T-MobileAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="T-Mobile Tweets (Network Voice)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/T-MobileTweets-NetworkVoice"/>
+		<Sheet name="Virgin Media Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/VirginMediaAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Virgin Media Tweets (Network Voice)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-NetworkVoice/VirginMediaTweets-NetworkVoice"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Acquisition (Other Network Complaints)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/Acquisition-OtherNetworkComplaints">
+		<Sheet name="O2 Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/O2AcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="O2 Tweets -(Other Network Complaints)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/O2Tweets-OtherNetworkComplaints"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Tweets  - (Other Network Complaints)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/VodafoneTweets-OtherNetworkComplaints"/>
+		<Sheet name="Hutchinson 3G Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/Hutchinson3GAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Hutchinson Tweets  - (Other Network Complaints)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/HutchinsonTweets-OtherNetworkComplaints"/>
+		<Sheet name="T-Mobile Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/T-MobileAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="T-Mobile Tweets  - (Other Network Complaints)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/T-MobileTweets-OtherNetworkComplaints"/>
+		<Sheet name="Virgin Media Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/VirginMediaAcquisitionsfromComplainingCompetitorCustomers"/>		
+		<Sheet name="Virgin Media Tweets -(Other Network Complaints)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-OtherNetworkComplaints/VirginMediaTweets-OtherNetworkComplaints"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Acquisition (Business Affairs - Handsets)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/Acquisition-BusinessAffairs-Handsets">
+		<Sheet name="O2 Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/O2AcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="O2 Tweets -(Business Affairs - Handsets)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/O2Tweets-BusinessAffairs-Handsets"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Tweets  - (Business Affairs - Handsets)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/VodafoneTweets-BusinessAffairs-Handsets"/>
+		<Sheet name="Hutchinson 3G Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/Hutchinson3GAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Hutchinson Tweets  - (Business Affairs - Handset)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/HutchinsonTweets-BusinessAffairs-Handset"/>
+		<Sheet name="T-Mobile Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/T-MobileAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="T-Mobile Tweets  - (Business Affairs - Handsets)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/T-MobileTweets-BusinessAffairs-Handsets"/>
+		<Sheet name="Virgin Media Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/VirginMediaAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Virgin Media Tweets -(Business Affairs - Handsets)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Handset_0/VirginMediaTweets-BusinessAffairs-Handsets"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Acquisition (Business Affairs - Pricing)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/Acquisition-BusinessAffairs-Pricing">
+		<Sheet name="O2 Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/O2AcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="O2 Tweets -(Business Affairs - Pricing)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/O2Tweets-BusinessAffairs-Pricing"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Tweets  - (Business Affairs - Pricing)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/VodafoneTweets-BusinessAffairs-Pricing"/>
+		<Sheet name="Hutchinson 3G Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/Hutchinson3GAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Hutchinson Tweets  - (Business Affairs - Handset)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/HutchinsonTweets-BusinessAffairs-Pricing"/>
+		<Sheet name="T-Mobile Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/T-MobileAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="T-Mobile Tweets  - (Business Affairs - Pricing)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/T-MobileTweets-BusinessAffairs-Pricing"/>
+		<Sheet name="Virgin Media Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/VirginMediaAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Virgin Media Tweets -(Business Affairs - Pricing)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Pricing/VirginMediaTweets-BusinessAffairs-Pricing"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Acquisition (Business Affairs - Shops)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/Acquisition-BusinessAffairs-Shops">
+		<Sheet name="O2 Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/O2AcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="O2 Tweets -(Business Affairs - Shops)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/O2TweetsBusinessAffairs-Shops"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Tweets  - (Business Affairs - Shops)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/VodafoneTweetsBusinessAffairs-Shops"/>
+		<Sheet name="Hutchinson 3G Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/Hutchinson3GAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Hutchinson Tweets  - (Business Affairs - Shops)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/HutchinsonTweetsBusinessAffairs-Shops"/>
+		<Sheet name="T-Mobile Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/T-MobileAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="T-Mobile Tweets  - (Business Affairs - Shops)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/T-MobileTweetsBusinessAffairs-Shops"/>
+		<Sheet name="Virgin Media Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/VirginMediaAcquisitionsfromComplainingCompetitorCustomers"/>	
+		<Sheet name="Virgin Media Tweets -(Business Affairs - Shops)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Shops/VirginMediaTweetsBusinessAffairs-Shops"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Acquisition (Business Affairs - Others)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/Acquisition-BusinessAffairs-Others">
+		<Sheet name="O2 Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/O2AcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="O2 Tweets -(Business Affairs - Others)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/O2TweetsBusinessAffairs-Other"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Tweets  - (Business Affairs - Others)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/VodafoneTweetsBusinessAffairs-Other"/>
+		<Sheet name="Hutchinson 3G Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/Hutchinson3GAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Hutchinson Tweets  - (Business Affairs - Others)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/HutchinsonTweetsBusinessAffairs-Other"/>
+		<Sheet name="T-Mobile Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/T-MobileAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="T-Mobile Tweets  - (Business Affairs - Others)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/T-MobileTweetsBusinessAffairs-Other"/>
+		<Sheet name="Virgin Media Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/VirginMediaAcquisitionsfromComplainingCompetitorCustomers"/>	
+		<Sheet name="Virgin Media Tweets -(Business Affairs - Others)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-Others/VirginMediaTweetsBusinessAffairs-Other"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Acquisition (Customer Care)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/Acquisition-CustomerCare">
+		<Sheet name="O2 Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/O2AcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="O2 Tweets -(Customer Care)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/O2Tweets-CustomerCare"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Tweets  - (Customer Care)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/VodafoneTweets-CustomerCare"/>
+		<Sheet name="Hutchinson 3G Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/Hutchinson3GAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Hutchinson Tweets  - (Customer Care)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/HutchinsonTweets-CustomerCare"/>
+		<Sheet name="T-Mobile Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/T-MobileAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="T-Mobile Tweets  - (Customer Care)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/T-MobileTweets-CustomerCare"/>
+		<Sheet name="Virgin Media Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/VirginMediaAcquisitionsfromComplainingCompetitorCustomers"/>		
+		<Sheet name="Virgin Media Tweets -(Customer Care)" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare/VirginMediaTweets-CustomerCare"/>
+    </Dashboard>
+  </DashboardGroup>
+</DashboardGroups>

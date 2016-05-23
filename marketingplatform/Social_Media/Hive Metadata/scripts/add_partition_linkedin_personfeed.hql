@@ -1,0 +1,1 @@
+ALTER TABLE linkedin_personfeed ADD IF NOT EXISTS PARTITION (day_key='2015-01-05') LOCATION '/user/sm_user/Social_Media/Linkedin/Person_Feed/2015-01-05';

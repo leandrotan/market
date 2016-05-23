@@ -1,0 +1,2 @@
+[desktop.sdk.application]
+HueLogViewer=HueLogViewer

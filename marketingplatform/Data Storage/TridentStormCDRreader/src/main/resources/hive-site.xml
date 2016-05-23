@@ -1,0 +1,229 @@
+<!--Mon Mar  9 11:23:00 2015-->
+    <configuration>
+    
+    <property>
+      <name>hive.enforce.sorting</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.tez.container.size</name>
+      <value>2048</value>
+    </property>
+    
+    <property>
+      <name>hive.optimize.bucketmapjoin.sortedmerge</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.compactor.worker.threads</name>
+      <value>0</value>
+    </property>
+    
+    <property>
+      <name>hive.compactor.initiator.on</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>hive.exec.pre.hooks</name>
+      <value>org.apache.hadoop.hive.ql.hooks.ATSHook</value>
+    </property>
+    
+    <property>
+      <name>fs.file.impl.disable.cache</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.auto.convert.join.noconditionaltask</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.aux.jars.path</name>
+      <value>file:///usr/lib/hive/auxlib/json-serde-1.1.9.9-Hive13-jar-with-dependencies.jar</value>
+    </property>
+    
+    <property>
+      <name>hive.map.aggr</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.enforce.bucketing</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.security.authorization.enabled</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>hive.exec.post.hooks</name>
+      <value>org.apache.hadoop.hive.ql.hooks.ATSHook</value>
+    </property>
+    
+    <property>
+      <name>hive.optimize.index.filter</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.optimize.bucketmapjoin</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.uris</name>
+      <value>thrift://nex-hdp-14.nexius.com:9083</value>
+    </property>
+    
+    <property>
+      <name>hive.mapjoin.bucket.cache.size</name>
+      <value>10000</value>
+    </property>
+    
+    <property>
+      <name>hive.auto.convert.join.noconditionaltask.size</name>
+      <value>200000000</value>
+    </property>
+    
+    <property>
+      <name>hive.vectorized.execution.enabled</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>javax.jdo.option.ConnectionUserName</name>
+      <value>hive</value>
+    </property>
+    
+    <property>
+      <name>hive.execution.engine</name>
+      <value>Tez</value>
+    </property>
+    
+    <property>
+      <name>hive.optimize.reducededuplication.min.reducer</name>
+      <value>1</value>
+    </property>
+    
+    <property>
+      <name>hive.txn.manager</name>
+      <value>org.apache.hadoop.hive.ql.lockmgr.DummyTxnManager</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.warehouse.dir</name>
+      <value>/apps/hive/warehouse</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.client.socket.timeout</name>
+      <value>60</value>
+    </property>
+    
+    <property>
+      <name>javax.jdo.option.ConnectionDriverName</name>
+      <value>com.mysql.jdbc.Driver</value>
+    </property>
+    
+    <property>
+      <name>hive.optimize.reducededuplication</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.semantic.analyzer.factory.impl</name>
+      <value>org.apache.hivealog.cli.HCatSemanticAnalyzerFactory</value>
+    </property>
+    
+    <property>
+      <name>hive.exec.failure.hooks</name>
+      <value>org.apache.hadoop.hive.ql.hooks.ATSHook</value>
+    </property>
+    
+    <property>
+      <name>hive.auto.convert.join</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>hive.heapsize</name>
+      <value>2048</value>
+    </property>
+    
+    <property>
+      <name>hive.mapred.reduce.tasks.speculative.execution</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.security.authenticator.manager</name>
+      <value>org.apache.hadoop.hive.ql.security.ProxyUserAuthenticator</value>
+    </property>
+    
+    <property>
+      <name>hive.tez.java.opts</name>
+      <value>-server -Xmx1024m -Djava.net.preferIPv4Stack=true -XX:NewRatio=8 -XX:+UseNUMA -XX:+UseParallelGC</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.cache.pinobjtypes</name>
+      <value>Table,Database,Type,FieldSchema,Order</value>
+    </property>
+    
+    <property>
+      <name>hive.auto.convert.sortmerge.join</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>javax.jdo.option.ConnectionURL</name>
+      <value>jdbc:mysql://nex-hdp-14.nexius.com/hive?createDatabaseIfNotExist=true</value>
+    </property>
+    
+    <property>
+      <name>fs.hdfs.impl.disable.cache</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.security.authorization.manager</name>
+      <value>org.apache.hadoop.hive.ql.security.authorization.StorageBasedAuthorizationProvider</value>
+    </property>
+    
+    <property>
+      <name>ambari.hive.db.schema.name</name>
+      <value>hive</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.execute.setugi</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.auto.convert.sortmerge.join.noconditionaltask</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.security.metastore.authorization.manager</name>
+      <value>org.apache.hadoop.hive.ql.security.authorization.StorageBasedAuthorizationProvider</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.enable.doAs</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.optimize.mapjoin.mapreduce</name>
+      <value>true</value>
+    </property>
+    
+  </configuration>

@@ -1,0 +1,4 @@
+-Open the project using IntelliJ
+-Package the project and copy the jar to the cluster.
+-Properties file is located under src/main/resources
+-java -cp <jar archive> <FQCN> <Path to properties file> <Optional Topology Name if running on Storm cluster>

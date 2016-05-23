@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DashboardGroups xmlns:json="http://james.newtonking.com/projects/json" >
+  <!--In case of a single node, include this attribute to mark it as array: json:Array='true' -->
+  <DashboardGroup name="Social Media Assessment Reports" json:Array='true'>
+    <Dashboard json:Array='true' name="Social Media Assessment Reports" url="/t/WRD10-social-media/views/PilotReportsPerCountry/SocialMediaTeaser">
+		<Sheet name="Social Media Sentiment Distribution" url="/t/WRD10-social-media/views/PilotReportsPerCountry/SocialMediaSentimentDistribution"/>
+		<Sheet name="Social Media Sentiment Trend" url="/t/WRD10-social-media/views/PilotReportsPerCountry/SocialMediaSentimentTrend"/>
+		<Sheet name="Social Media Sentiments Summary" url="/t/WRD10-social-media/views/PilotReportsPerCountry/SocialMediaSentimentsSummary"/>
+		<Sheet name="Social Media Negative Sentiments Insight" url="/t/WRD10-social-media/views/PilotReportsPerCountry/SocialMediaNegativeSentimentsInsight"/>
+		<Sheet name="Social Media Summary" url="/t/WRD10-social-media/views/PilotReportsPerCountry/SocialMediaSummary"/>
+    </Dashboard>
+  </DashboardGroup>
+</DashboardGroups>

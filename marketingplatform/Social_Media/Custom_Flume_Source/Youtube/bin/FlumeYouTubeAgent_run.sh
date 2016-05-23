@@ -1,0 +1,2 @@
+ #/usr/bin/shell
+ /usr/lib/flume/bin/flume-ng agent -c /usr/lib/flume/conf -f /home/sm_user/Social_Media/Youtube/conf/flumeYouTube.properties -n YouTubeAgent --classpath /usr/lib/hive-hcatalog/share/hcatalog/hive-hcatalog-streaming-0.13.0.2.1.5.0-695.jar:/usr/lib/hive/lib/hive-metastore-0.13.0.2.1.5.0-695.jar:/usr/lib/hive/lib/hive-exec-0.13.0.2.1.5.0-695.jar:/usr/lib/hive/lib/hive-cli-0.13.0.2.1.5.0-695.jar:/usr/lib/hive/lib/libfb303-0.9.0.jar:/usr/lib/hive/lib/antlr-runtime-3.4.jar:/home/sm_user/Social_Media/Youtube/lib/* -Dflume.root.logger=DEBUG,console

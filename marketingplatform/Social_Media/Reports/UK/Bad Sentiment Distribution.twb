@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='8.3' xml:base='http://nex-tbl-08.nexius.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.14.1117.2230                                -->
+  <repository-location id='BadSentimentDistribution_0' path='/t/WRD10-social-media/workbooks' revision='1.4' site='WRD10-social-media' />
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='bad_sentiment_distribution (wrd10_socialmedia.bad_sentiment_distribution) (wrd10_socialmedia)' inline='true' name='hortonworkshadoophive.42062.232301400465' version='8.3'>
+      <connection authentication='yes' authentication-type='3' class='hortonworkshadoophive' connection-type='2' dbname='' odbc-connect-string-extras='' one-time-sql='' port='10000' schema='wrd10_socialmedia' server='nex-hdp-15.nexius.com' server-oauth='' tablename='bad_sentiment_distribution_view' username='sm_user' workgroup-auth-mode='prompt'>
+        <relation name='bad_sentiment_distribution_view' table='[wrd10_socialmedia].[bad_sentiment_distribution_view]' type='table' />
+        <connection-customization class='hortonworkshadoophive' enabled='false' version='8.3'>
+          <vendor name='hortonworkshadoophive' />
+          <driver name='hortonworkshadoophive' />
+          <customizations>
+            <customization name='CAP_CONNECT_STORED_PROCEDURE' value='no' />
+            <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
+            <customization name='CAP_DEFERS_CONNECTION_VERIFICATION' value='no' />
+            <customization name='CAP_FAST_METADATA' value='no' />
+            <customization name='CAP_INDEX_TEMP_TABLES' value='no' />
+            <customization name='CAP_ODBC_ALWAYS_THROW_CONNECT_ERRORS' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_DATETIME_AS_CHAR' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_DATE_AS_CHAR' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_MAX_STRING_BUFFERS' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_MEDIUM_STRING_BUFFERS' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_SIGNED' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_SMALL_STRING_BUFFERS' value='no' />
+            <customization name='CAP_ODBC_BIND_SUPPRESS_INT64' value='no' />
+            <customization name='CAP_ODBC_BIND_SUPPRESS_PREFERRED_TYPES' value='no' />
+            <customization name='CAP_ODBC_BIND_SUPPRESS_WIDE_CHAR' value='no' />
+            <customization name='CAP_ODBC_CURSOR_DYNAMIC' value='no' />
+            <customization name='CAP_ODBC_CURSOR_FORWARD_ONLY' value='no' />
+            <customization name='CAP_ODBC_CURSOR_KEYSET_DRIVEN' value='no' />
+            <customization name='CAP_ODBC_CURSOR_STATIC' value='no' />
+            <customization name='CAP_ODBC_DRIVER_HIVE_ASSUME_LATEST' value='no' />
+            <customization name='CAP_ODBC_ERROR_IGNORE_FALSE_ALARM' value='no' />
+            <customization name='CAP_ODBC_FETCH_BUFFERS_RESIZABLE' value='no' />
+            <customization name='CAP_ODBC_FETCH_BUFFERS_SIZE_MASSIVE' value='no' />
+            <customization name='CAP_ODBC_FETCH_CONTINUE_ON_ERROR' value='no' />
+            <customization name='CAP_ODBC_FORCE_SINGLE_ROW_BINDING' value='no' />
+            <customization name='CAP_ODBC_METADATA_STRING_LENGTH_UNKNOWN' value='no' />
+            <customization name='CAP_ODBC_REBIND_SKIP_UNBIND' value='no' />
+            <customization name='CAP_ODBC_TRIM_VARCHAR_PADDING' value='no' />
+            <customization name='CAP_ODBC_UNBIND_AUTO' value='no' />
+            <customization name='CAP_ODBC_UNBIND_BATCH' value='no' />
+            <customization name='CAP_ODBC_UNBIND_EACH' value='no' />
+            <customization name='CAP_ODBC_USE_NATIVE_PROTOCOL' value='no' />
+            <customization name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES' value='no' />
+            <customization name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES' value='yes' />
+            <customization name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES' value='yes' />
+            <customization name='CAP_QUERY_BOOLEXPR_TO_INTEXPR' value='no' />
+            <customization name='CAP_QUERY_BOOL_IDENTIFIER_TO_LOGICAL' value='no' />
+            <customization name='CAP_QUERY_FORCE_AGGREGATE_MEASURES' value='no' />
+            <customization name='CAP_QUERY_GROUP_BY_ALIAS' value='no' />
+            <customization name='CAP_QUERY_GROUP_BY_DEGREE' value='no' />
+            <customization name='CAP_QUERY_HAVING_REQUIRES_GROUP_BY' value='no' />
+            <customization name='CAP_QUERY_HAVING_UNSUPPORTED' value='no' />
+            <customization name='CAP_QUERY_JOIN_ACROSS_SCHEMAS' value='no' />
+            <customization name='CAP_QUERY_JOIN_ASSUME_CONSTRAINED' value='no' />
+            <customization name='CAP_QUERY_JOIN_PUSH_DOWN_CONDITION_EXPRESSIONS' value='no' />
+            <customization name='CAP_QUERY_JOIN_REQUIRES_SCOPE' value='no' />
+            <customization name='CAP_QUERY_JOIN_REQUIRES_SUBQUERY' value='no' />
+            <customization name='CAP_QUERY_NULL_REQUIRES_CAST' value='yes' />
+            <customization name='CAP_QUERY_RECOMPILE_FAILED_QUERY' value='no' />
+            <customization name='CAP_QUERY_SELECT_ALIASES_SORTED' value='no' />
+            <customization name='CAP_QUERY_SIMPLIFY_SUBQUERY_CONTEXT_FOR_JOIN_CULLING' value='no' />
+            <customization name='CAP_QUERY_SORT_BY' value='yes' />
+            <customization name='CAP_QUERY_SORT_BY_DEGREE' value='no' />
+            <customization name='CAP_QUERY_SUBQUERIES' value='yes' />
+            <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP' value='yes' />
+            <customization name='CAP_QUERY_SUBQUERY_DATASOURCE_CONTEXT' value='yes' />
+            <customization name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT' value='yes' />
+            <customization name='CAP_QUERY_TOPSTYLE_LIMIT' value='no' />
+            <customization name='CAP_QUERY_TOPSTYLE_ROWNUM' value='no' />
+            <customization name='CAP_QUERY_TOPSTYLE_TOP' value='no' />
+            <customization name='CAP_QUERY_TOP_0_METADATA' value='yes' />
+            <customization name='CAP_QUERY_TOP_N' value='yes' />
+            <customization name='CAP_QUERY_USE_DOMAIN_RANGES_OPTIMIZATION' value='yes' />
+            <customization name='CAP_QUERY_WHERE_FALSE_METADATA' value='no' />
+            <customization name='CAP_SELECT_INTO' value='no' />
+            <customization name='CAP_SELECT_TOP_INTO' value='no' />
+            <customization name='CAP_STORED_PROCEDURE_PREFER_TEMP_TABLE' value='no' />
+            <customization name='CAP_STORED_PROCEDURE_REPAIR_TEMP_TABLE_STRINGS' value='no' />
+            <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_BUFFER' value='no' />
+            <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_NEW_PROTOCOL' value='no' />
+            <customization name='CAP_SUPPRESS_CONNECTION_POOLING' value='yes' />
+            <customization name='CAP_SUPPRESS_DISCOVERY_QUERIES' value='no' />
+            <customization name='CAP_SUPPRESS_QUICK_FILTER_ACCELERATION_VIEWS' value='no' />
+          </customizations>
+        </connection-customization>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>val</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[val]</local-name>
+            <parent-name>[bad_sentiment_distribution_view]</parent-name>
+            <remote-alias>val</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>csp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[csp]</local-name>
+            <parent-name>[bad_sentiment_distribution_view]</parent-name>
+            <remote-alias>csp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[bad_sentiment_distribution_view]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_key</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_key]</local-name>
+            <parent-name>[bad_sentiment_distribution_view]</parent-name>
+            <remote-alias>day_key</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ValPercentage' datatype='real' default-format='p0.00%' name='[Calculation_3780227074307275]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([val])/total(sum([val]))' scope-isolation='false'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal'>
+      </column>
+      <column caption='CSP' datatype='string' name='[csp]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Day Key' datatype='string' name='[day_key]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Negative Tweets Count' datatype='integer' default-format='N' name='[val]' role='measure' type='quantitative'>
+      </column>
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\oana.dobriceanu\Desktop\R&amp;D\bad_sentiment_distribution (wrd10_socialmedia.bad_sentiment_distribution) (wrd10_socialmedia).tde' schema='Extract' tablename='Extract' update-time='03/04/2015 03:40:19 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='64' timestamp-start='2015-03-04 15:40:19.715' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bad_sentiment_distribution_view</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>255</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Business Affairs&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Network&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1020</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>csp</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[csp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>csp</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bad_sentiment_distribution_view</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <scale>1</scale>
+              <width>255</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Hutchinson 3G&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Virgin Media UK&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1020</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_key</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_key]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_key</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bad_sentiment_distribution_view</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <scale>1</scale>
+              <width>10</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;2015-02-06&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;2015-02-18&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>40</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>val</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[val]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>val</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bad_sentiment_distribution_view</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>9</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' rowDisplayCount='64' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#7f7f7f'>
+              <bucket>&quot;Business Affairs&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Network&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Others&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Customer Care&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet lock-updates='true' name='Bad Sentiment Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bad_sentiment_distribution (wrd10_socialmedia.bad_sentiment_distribution) (wrd10_socialmedia)' name='hortonworkshadoophive.42062.232301400465' />
+          </datasources>
+          <datasource-dependencies datasource='hortonworkshadoophive.42062.232301400465'>
+            <column caption='ValPercentage' datatype='real' default-format='p0.00%' name='[Calculation_3780227074307275]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([val])/total(sum([val]))' scope-isolation='false'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal'>
+            </column>
+            <column caption='CSP' datatype='string' name='[csp]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[csp]' derivation='None' name='[none:csp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[val]' derivation='Sum' name='[sum:val:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3780227074307275]' derivation='User' name='[usr:Calculation_3780227074307275:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column caption='Negative Tweets Count' datatype='integer' default-format='N' name='[val]' role='measure' type='quantitative'>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[hortonworkshadoophive.42062.232301400465].[none:csp:nk]'>
+            <groupfilter function='member' level='[none:csp:nk]' member='&quot;Orange UK&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[hortonworkshadoophive.42062.232301400465].[none:csp:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='259' />
+            <format attr='height' value='274' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[hortonworkshadoophive.42062.232301400465].[usr:Calculation_3780227074307275:qk]' value=''>
+              <formatted-text>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[hortonworkshadoophive.42062.232301400465].[none:category:nk]' />
+              <size column='[hortonworkshadoophive.42062.232301400465].[usr:Calculation_3780227074307275:qk]' />
+              <text column='[hortonworkshadoophive.42062.232301400465].[none:category:nk]' />
+              <text column='[hortonworkshadoophive.42062.232301400465].[usr:Calculation_3780227074307275:qk]' />
+              <tooltip column='[hortonworkshadoophive.42062.232301400465].[sum:val:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Category:  &lt;[hortonworkshadoophive.42062.232301400465].[none:category:nk]&gt;&#10;Negative Tweets Count</run>
+                <run bold='true' fontcolor='#787878'>:  </run>
+                <run bold='true'>&lt;[hortonworkshadoophive.42062.232301400465].[sum:val:qk]&gt;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.9010497331619263' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Bad Sentiment Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[hortonworkshadoophive.42062.232301400465].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[hortonworkshadoophive.42062.232301400465].[none:csp:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <highlight>
+        <color-one-way>
+          <field>[hortonworkshadoophive.42062.232301400465].[none:csp:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Bad Sentiment Distribution' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

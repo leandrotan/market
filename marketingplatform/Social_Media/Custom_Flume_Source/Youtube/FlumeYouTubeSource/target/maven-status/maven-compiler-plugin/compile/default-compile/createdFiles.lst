@@ -1,0 +1,9 @@
+com\wicom\flumeSources\YouTubeSubsFeed.class
+com\wicom\flumeSources\YouTubeVideoListFeed.class
+com\wicom\flumeSources\youTubeChannelFeed.class
+com\wicom\flumeSources\YouTubeReport.class
+com\wicom\flumeSources\YouTubeVideoComments.class
+com\wicom\flumeSources\YouTubeVideoStatistics.class
+com\wicom\flumeSources\youTubeChannelSubscribersFeed.class
+com\wicom\flumeSources\YouTubeSearchFeed.class
+com\wicom\flumeSources\Authorization.class

@@ -1,0 +1,2 @@
+export JYTHONPATH=/home/mykhail.martsynyuk/HadoopPOC/Vertica2HDFS/libs/vertica-jdk5-6.1.3-0.jar:/home/mykhail.martsynyuk/HadoopPOC/Vertica2HDFS/Pig-Jython-Example
+pig HadoopPOC/Vertica2HDFS/Pig-Jython-Example/PigJythonExample/Vertica2HDFS.py dim_network measure_dictionary types_x_measures generic_dimension_types

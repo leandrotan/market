@@ -1,0 +1,1 @@
+create 'dim_audit', 'mandatory_columns', 'optional_columns'

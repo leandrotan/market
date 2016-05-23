@@ -1,0 +1,6 @@
+--DROP TABLE storm_types_x_measures;
+
+CREATE TABLE storm_types_x_measures (
+	"measure_sid" Integer,
+	"dimension_type_sid" Integer
+)

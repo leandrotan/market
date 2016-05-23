@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/hive-cli-0.13.0.jar"/>
+	<classpathentry kind="lib" path="libs/hive-jdbc-0.13.0.jar"/>
+	<classpathentry kind="lib" path="libs/hive-metastore-0.13.0.jar"/>
+	<classpathentry kind="lib" path="libs/libthrift-0.9.0.jar"/>
+	<classpathentry kind="lib" path="libs/hive-service-0.13.0.jar"/>
+	<classpathentry kind="lib" path="libs/libfb303-0.9.0.jar"/>
+	<classpathentry kind="lib" path="libs/hive-exec-0.13.0.jar"/>
+	<classpathentry kind="lib" path="libs/lingpipe-4.0.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/commons-httpclient-3.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-common-2.0.0-cdh4.4.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-common-2.1.0-beta.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-common-2.2.0.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient-4.2.5.jar"/>
+	<classpathentry kind="lib" path="libs/httpcore-4.2.5.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.7.10.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-simple-1.7.10.jar"/>
+	<classpathentry kind="lib" path="libs/twitter4j-async-4.0.2.jar"/>
+	<classpathentry kind="lib" path="libs/twitter4j-core-4.0.2.jar"/>
+	<classpathentry kind="lib" path="libs/twitter4j-media-support-4.0.2.jar"/>
+	<classpathentry kind="lib" path="libs/twitter4j-stream-4.0.2.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

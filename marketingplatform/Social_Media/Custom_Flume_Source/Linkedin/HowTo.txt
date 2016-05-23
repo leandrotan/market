@@ -1,0 +1,5 @@
+/usr/lib/flume/bin/flume-ng agent -c /usr/lib/flume/conf -f /home/mykhail.martsynyuk/flumeLinkedIn.properties -n LinkedInAgent --classpath /home/mykhail.martsynyuk/CUSTOM_CP/*:/home/mykhail.martsynyuk/FlumeLinkedInSource-0.0.1-SNAPSHOT.jar -Dflume.root.logger=DEBUG,console -Xmx1024m
+
+where 
+/home/mykhail.martsynyuk/CUSTOM_CP/*:/home/mykhail.martsynyuk/FlumeLinkedInSource-0.0.1-SNAPSHOT.jar
+is path to custom libs like OLTU and JSON and path to lib with custom flume source class

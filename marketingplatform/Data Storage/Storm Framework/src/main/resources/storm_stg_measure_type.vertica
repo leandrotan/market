@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS storm_stg_measure_type;
+CREATE TABLE storm_stg_measure_type (
+	"dimension_type" Varchar(200),
+	"measure_name" Varchar(200),
+	"measure_column_index" Integer
+)

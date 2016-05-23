@@ -1,0 +1,1 @@
+ALTER TABLE twitter_userstream ADD IF NOT EXISTS PARTITION (day_key='2014-12-29') LOCATION '/user/sm_user/Social_Media/Twitter/UserStatusStream/2014-12-29';

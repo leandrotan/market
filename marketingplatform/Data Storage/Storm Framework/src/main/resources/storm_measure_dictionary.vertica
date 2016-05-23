@@ -1,0 +1,7 @@
+--DROP TABLE storm_generic_dimension_types;
+
+CREATE TABLE storm_generic_dimension_types (
+	"dimension_type_sid" Integer NOT NULL,
+	"dimension_table_name" Varchar(128),
+	"dimension_type" Varchar(400)
+)

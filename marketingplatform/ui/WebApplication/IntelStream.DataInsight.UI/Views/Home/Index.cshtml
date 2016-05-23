@@ -1,0 +1,260 @@
+﻿@model Nexius.IntelStream.DataInsight.UI.Models.ReportModel
+<script src="Html/TestData.js" type="text/javascript"></script>
+<style>
+    html, body
+    {
+        height: 100%;
+    }
+
+    .fullHeight
+    {
+        height: 100%;
+        min-height: 100%;
+        padding-top: 50px;
+    }
+
+    .fullWidth
+    {
+        /*to use with container-fluid*/
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+
+    .navbar-center
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    #dashboardGroupTitle
+    {
+        color: #666;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    #dashboardGroupSelectorList{
+        margin-bottom: 2px;
+    }
+
+    #dashboardGroupSelectorList li
+    {
+        padding-left: 0px;
+    }
+
+    #dashboardGroupSelectorList .dropdown > a
+    {
+        border-radius: 24px;
+        padding: 2px 5px;
+    }
+
+        #dashboardGroupSelectorList .dropdown > a:hover
+        {
+            text-decoration: none;
+            cursor: pointer;
+            cursor: hand;
+        }
+
+    .nav .open > a, .nav .open > a:focus, .nav .open > a.btn-primary:hover,
+    .nav .open > a:first-child
+    {
+        background-color: #1e72b9;
+        color: #FFF;
+    }
+
+        .nav .open > a#selectedSheetName,
+        .nav .open > a#selectedSheetName:hover
+        {
+            background-image: none;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+    .navbar-header
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .navbar-header li
+        {
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+
+    .applicationTitle
+    {
+        font-size: 18px;
+        font-style: italic;
+        font-family: fantasy;
+        color: #777;
+        text-transform: uppercase;
+        text-shadow: 0 0 1px rgba(119, 119, 119, 1);
+        line-height: 16px;
+    }
+</style>
+<script type="text/javascript">
+    /********* GLOBAL SCOPE *********/
+    var tableauViz = false;
+    var reportingApp = null;
+    var dashGrp=@Html.Raw(Model.DashboardGroups);
+    var AppPath ='';
+    var currentLoggerUser = '@Model.UserName';
+
+    $(document).ready(function() {
+        AppPath = '@Url.Content("~/")';
+        initializeReportingApp();
+        
+        $("#sheetsListC").html("");        
+        var dashboardGroupBarElements=""; 
+        var defaultDahsboardGroup=null;      
+        $.each(dashGrp.DashboardGroup, function(i, currentDashboardGroup) {
+            currentDashboardGroup.id=getIdFromName(currentDashboardGroup.name,i);
+            //console.log("DashGroup: %o",currentDashboardGroup);
+            var dashboardListElements="";
+            
+            if (currentDashboardGroup.Dashboard) {
+                $.each(currentDashboardGroup.Dashboard, function(j, currentDashboard){
+                    currentDashboard.id=getIdFromName(currentDashboard.name,j);
+                    //console.log("Dashboard: %o",currentDashboard);
+                    dashboardListElements+='<li id="dashboardId'+currentDashboard.id+'">'
+                            +'<a href="#" onclick="selectDashboard(\''+currentDashboardGroup.name+'\',\''+currentDashboardGroup.id+'\''
+                            +', \''+currentDashboard.name+'\',\''+currentDashboard.id+'\')">'+currentDashboard.name+'</a></li>'            
+                });
+            }
+
+            if (currentDashboardGroup.Page) {
+                $.each(currentDashboardGroup.Page, function(j, currentPage){
+                    currentPage.id=getIdFromName(currentPage.name,j);
+                    //console.log("Page: %o",currentPage);
+                    dashboardListElements+='<li id="pageId'+currentPage.id+'">'
+                            +'<a href="#" onclick="selectPage(\''+currentDashboardGroup.name+'\',\''+currentDashboardGroup.id+'\''
+                            +', \''+currentPage.name+'\',\''+currentPage.id+'\',\''+currentPage.url+'\')">'+currentPage.name+'</a></li>'            
+                });
+            }
+
+            dashboardGroupBarElements+='<li class="dropdown" id="dashboardGroup'+currentDashboardGroup.id+'" >'
+                    +'<a class="dropdown-toggle" data-toggle="dropdown" >'+currentDashboardGroup.name+'</a>'
+                    +'<ul id="dashboardSelectorList'+currentDashboardGroup.id+'" class="dropdown-menu">'+dashboardListElements+'</ul>'
+                    +'</li>';
+            
+            if (currentDashboardGroup.defaultSelected){
+                defaultDahsboardGroup=currentDashboardGroup;
+            }
+        });
+
+        $("#dashboardGroupSelectorList").html(dashboardGroupBarElements);
+        
+        //select default dashboard as default
+        if (defaultDahsboardGroup==null)
+            defaultDahsboardGroup=dashGrp.DashboardGroup[0];
+        
+        if (defaultDahsboardGroup.Dashboard) {
+            selectDashboard(defaultDahsboardGroup.name, defaultDahsboardGroup.id
+                , defaultDahsboardGroup.Dashboard[0].name, defaultDahsboardGroup.Dashboard[0].id);
+        } else if (defaultDahsboardGroup.Page) {
+            selectPage(defaultDahsboardGroup.name, defaultDahsboardGroup.id
+                , defaultDahsboardGroup.Page[0].name, defaultDahsboardGroup.Page[0].id, defaultDahsboardGroup.Page[0].url);
+        }
+        
+        //Add dropdown close on mouse over
+        $("#dashboardGroupSelectorList ul.dropdown-menu, #sheetSelectorList").mouseleave(function(){
+            $(".dropdown").removeClass("open");
+        });
+
+    });
+    
+    function selectPage(dashboardGroupName, dashboardGroupId, pageName, pageId, htmlUrl) {
+        $("#dashboardGroupTitle").html(pageName);
+        $("#dashboardGroupSelectorList .dropdown-toggle").removeClass("btn-primary");
+        $("#dashboardGroup"+dashboardGroupId+" .dropdown-toggle").addClass("btn-primary");
+        $("#dashboardGroupSelectorList .dropdown-menu li").removeClass("active"); 
+        $("#pageId"+pageId).addClass("active");
+        $("#sheetSelectorDD").hide();
+        $("#sheetSelectorList").html("");
+
+        reportingApp.disposeViz();
+        $("#main").html("");
+        $("#main").load(AppPath + htmlUrl, function () {
+            initPageScript();
+        });
+    }
+
+    function selectDashboard(dashboardGroupName, dashboardGroupId, dashboardName, dashboardId){        
+        $("#dashboardGroupTitle").html(dashboardName);
+        $("#dashboardGroupSelectorList .dropdown-toggle").removeClass("btn-primary");
+        $("#dashboardGroup"+dashboardGroupId+" .dropdown-toggle").addClass("btn-primary");
+        $("#dashboardGroupSelectorList .dropdown-menu li").removeClass("active"); 
+        $("#dashboardId"+dashboardId).addClass("active");
+        $("#sheetSelectorDD").show();
+        
+        populateSheetSelector(JSONSelect.match(':has(:root > .name:val("'+dashboardName+'"))', dashGrp));        
+    }
+    
+    function selectSheet(sheetName, sheetUrl){     
+        $("#selectedSheetName").html(sheetName+ ' <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>' );
+        reportingApp.setViz(sheetUrl);
+    }
+
+    function populateSheetSelector(dashboard){
+        dashboard=dashboard[0];
+        var sheetsList='<li><a href="#" onclick="selectSheet(\'Dashboard View\',\''+dashboard.url+'\')">Dashboard View</a></li>';
+        if(dashboard.Sheet && dashboard.Sheet.length){
+            $.each(dashboard.Sheet, function(k, currentSheet){    
+                currentSheet.id=getIdFromName(currentSheet.name,k);
+                sheetsList+='<li id="sheetId'+currentSheet.id+'" ><a href="#" onclick="selectSheet(\''+currentSheet.name+'\',\''+currentSheet.url+'\')">'+currentSheet.name+'</a></li>';
+            });
+        }       
+        $("#sheetSelectorList").html(sheetsList);
+        selectSheet('Dashboard View', dashboard.url);
+    }
+
+    function initializeReportingApp() {
+        //initialize ReportingApp
+        reportingApp = new ReportingApp({
+            tableauViz: tableauViz,
+            vizWrapper: document.getElementById("main")
+        });
+    }
+
+    function getIdFromName(name, index){
+        return name.replace(/\(|\)| |\//g,'')+index;
+    }
+
+    var newTweetEventsRegistered = false;
+    var closeThreadEventsRegistered = false;
+</script>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <ul class="navbar-header">
+            <li>
+                <img src="~/Images/intelStream_data_insight.png" width="138" height="43" style="margin-top:4px;"/></li>
+        </ul>
+        <div id="navbars" class="navbar-collapse collapse">
+            <div class="nav navbar-nav navbar-center">
+                <div style="margin-top: 4px"><span id="dashboardGroupTitle"></span></div>
+            </div>
+            <div class="nav navbar-nav navbar-left" style="margin-top: 28px; margin-left: 20px;">
+                <ul id="dashboardGroupSelectorList" class="list-inline">
+                </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="sheetSelectorDD" class="nav nav-pills dropdown ">
+                    <a href="#" id="selectedSheetName" style="color: #1e72b9" class="dropdown-toggle" data-toggle="dropdown">Dashboard Overview <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                    <ul id="sheetSelectorList" class="dropdown-menu">
+                    </ul>
+                </li>
+                <li class="active"><a href="#" onclick="document.getElementById('logoutForm').submit();">Logout @Model.UserName</a></li>
+            </ul>
+        </div>
+    </div>
+    @using (Html.BeginForm("LogOut", "Login", FormMethod.Post, new { id = "logoutForm" })) { }
+</nav>
+<div class="container-fluid fullHeight fullWidth" id="main">
+</div>
+

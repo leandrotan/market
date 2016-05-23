@@ -1,0 +1,130 @@
+﻿.k-widget.k-listview
+{
+    border: none;
+    box-shadow: none;
+}
+
+.message-item-template, .comment-item-template
+{
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    border-bottom: 1px dashed rgb(66, 192, 251);
+}
+
+.messageReplies .message-item-template
+{
+    border: none;
+}
+
+.message-item-template p, .comment-item-template p
+{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+
+.messageType
+{
+    float: left;
+    position: absolute;
+}
+
+.messageDetails
+{
+    padding-left: 58px;
+}
+
+.messageType div
+{
+    /* border: 1px solid #337AB7;
+        border-radius: 3px;*/
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 52px;
+    height: 52px;
+    margin: 0px;
+}
+
+.messageReplies .messageDetails
+{
+    padding-left: 42px;
+}
+
+
+.messageReplies .messageType div
+{
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+}
+
+.messageType .AUTO-MESSAGE
+{
+    background-image: url(../Images/automessage-icon.png);
+}
+
+.messageType .OUT
+{
+    background-image: url(../Images/outgoing-icon.png);
+}
+
+.messageType .IN
+{
+    background-image: url(../Images/incoming-icon.png);
+}
+
+.messageActions
+{
+    right: 0;
+    position: absolute;
+}
+
+.timeStamp
+{
+    font-size: 10px;
+    margin-left: 8px;
+    color: rgb(136,153,166);
+}
+
+#footerButtons
+{
+    margin-top: 12px;
+    right: 20px;
+    bottom: 30px;
+    position: absolute;
+}
+
+    table > tbody > tr > th
+    {
+        font-weight: bold;
+        text-align: right;
+    }
+
+    table > tbody > tr > td
+    {
+        text-align: left;
+        padding-left: 4px;
+    }
+
+    table > tbody > tr
+    {
+        height: 32px;
+    }
+
+    table > thead > tr > th
+    {
+        font-weight: bold;
+        text-align: right;
+    }
+
+    table > thead > tr > td
+    {
+        text-align: left;
+        padding-left: 4px;
+    }
+
+   

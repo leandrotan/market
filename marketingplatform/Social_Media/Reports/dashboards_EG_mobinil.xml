@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DashboardGroups xmlns:json="http://james.newtonking.com/projects/json" >
+  <DashboardGroup name="Social Media Analytics">
+    <Dashboard json:Array='true' name="Social Media Overview" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SocialMediaOverview"  >
+		<Sheet name="Social Media Sentiment Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SocialMediaSentimentTrend"/>
+		<Sheet name="Sentiment Distribution" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SentimentDistribution"/>
+		<Sheet name="Complaints Summary" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/ComplaintsSummary"/>
+		
+		<Sheet name="Top Topics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/TopTopics"/>
+		<Sheet name="Top 10 Topic Distribution" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/Top10TopicDistribution"/>
+		<Sheet name="Influencers Monitoring" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/InfluencersMonitoring"/>
+		<!--Sheet name="Influencers Monitoring for Facebook" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/InfluencersMonitoringFB"/-->
+		<Sheet name="Key Accounts Monitoring" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/KeyAccountsMonitoring"/>
+		<Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SocialMediaCommentsDetails"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SourceDataView_2"/>
+    </Dashboard>
+    <!--Dashboard json:Array='true' name="Map View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/MapView"  >
+		<Sheet name="Orange Social Media Concentration by Area" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/OrangeSocialMediaConcentrationbyArea"/>
+		<Sheet name="Orange Bad Sentiment Concentration by Area" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/OrangeBadSentimentConcentrationbyArea"/>
+    </Dashboard-->
+	<Dashboard json:Array='true' name="Network Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/NetworkInsight"  >
+		<Sheet name="Network Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/NetworkTweetsTrend"/>
+		<Sheet name="Network Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/MonthlyStatistics"/>
+		<Sheet name="Network Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/NetworkMonthlyView"/>
+		<Sheet name="Network Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/Tweetsfootprint"/>
+		<Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SocialMediaCommentsDetails_1"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SourceDataView"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Business Affairs Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/BusinessAffairsInsight"  >
+		<Sheet name="Business Affairs Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/BusinessAffairsTweetsTrend"/>
+		<Sheet name="Business Affairs Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/MonthlyStatistics_1"/>
+		<Sheet name="Business Affairs Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/BusinessAffairsMonthlyView"/>
+		<Sheet name="Business Affairs Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/Tweetsfootprint_1"/>
+		<Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SocialMediaCommentsDetails_2"/>	
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SourceDataView_1"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Customer Care Insight" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/CustomerCareInsight"  >
+		<Sheet name="Customer Care Tweets Trend" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/CustomerCareTweetsTrend"/>
+		<Sheet name="Customer Care Monthly Statistics" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/MonthlyStatistics_2"/>
+		<Sheet name="Customer Care Monthly View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/CustomerCareMonthlyView"/>
+		<Sheet name="Customer Care Tweets Footprint" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/Tweetsfootprint_2"/>
+		<Sheet name="Social Media Comments Details" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SocialMediaCommentsDetails_3"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaAnalyticsEGMobinil/SourceDataView_3"/>
+	</Dashboard>
+  </DashboardGroup>
+  <DashboardGroup name="Benchmark Analytics" >
+    <Dashboard json:Array='true' name="Social Media Sentiment Benchmark" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaSentimentBenchmark">
+		<Sheet name="Social Media Outlet Followers Tracking (MOBINIL)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaOutletFollowersTrackingMOBINIL"/>
+		<Sheet name="Social Media Followers Insight (MOBINIL)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaFollowersInsightMOBINIL"/>
+		<Sheet name="Social Media Outlet Followers Tracking (ETISALAT)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaOutletFollowersTrackingETISALAT"/>
+		<Sheet name="Social Media Followers Insight (ETISALAT)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaFollowersInsightETISALAT"/>
+		<Sheet name="Social Media Outlet Followers Tracking (VODAFONE)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaOutletFollowersTrackingVODAFONE"/>
+		<Sheet name="Social Media Followers Insight (VODAFONE)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaFollowersInsightVODAFONE"/>
+		<Sheet name="Mobinil Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilSocialMediaActivitiesTrend"/>
+		<Sheet name="Mobinil Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilSocialMediaSentiment"/>
+		<Sheet name="Etisalat Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatSocialMediaActivitiesTrend"/>
+		<Sheet name="Etisalat Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatSocialMediaSentiment"/>
+		<Sheet name="Vodafone Social Media Activities Trend" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneSocialMediaActivitiesTrend"/>
+		<Sheet name="Vodafone Social Media Sentiment" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneSocialMediaSentiment"/>
+		<Sheet name="Social Media Outlet Followers Tracking" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SocialMediaFollowersTracking"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SourceDataView"/>
+    </Dashboard>
+    <Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/DetailedSentimentBenchmarkNetwork">
+		<Sheet name="Mobinil Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilSentimentDistributionNetwork"/>
+		<Sheet name="Mobinil Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilTweetsNetwork"/>
+		<Sheet name="Etisalat Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatSentimentDistributionNetwork"/>
+		<Sheet name="Etisalat Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatTweetsNetwork"/>
+		<Sheet name="Vodafone Bad Sentiment Distribution (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneSentimentDistributionNetwork"/>
+		<Sheet name="Vodafone Tweets (Network)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneTweetsNetwork"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SourceDataView"/>
+    </Dashboard>
+	<Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/DetailedSentimentBenchmarkBusinessAffairs">
+		<Sheet name="Mobinil Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilSentimentDistributionBusinessAffairs"/>
+		<Sheet name="Mobinil Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilTweetsBusinessAffairs"/>
+		<Sheet name="Etisalat Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatSentimentDistributionBusinessAffairs"/>
+		<Sheet name="Etisalat Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatTweetsBusinessAffairs"/>
+		<Sheet name="Vodafone Bad Sentiment Distribution (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneSentimentDistributionBusinessAffairs"/>
+		<Sheet name="Vodafone Tweets (Business Affairs)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneTweetsBusinessAffairs"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SourceDataView"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Detailed Sentiment Benchmark (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/DetailedSentimentBenchmarkCustomerCare">
+		<Sheet name="Mobinil Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilSentimentDistributionCustomerCare"/>
+		<Sheet name="Mobinil Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/MobinilTweetsCustomerCare"/>
+		<Sheet name="Etisalat Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatSentimentDistributionCustomerCare"/>
+		<Sheet name="Etisalat Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/EtisalatTweetsCustomerCare"/>
+		<Sheet name="Vodafone Bad Sentiment Distribution (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneSentimentDistributionCustomerCare"/>
+		<Sheet name="Vodafone Tweets (Customer Care)" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/VodafoneTweetsCustomerCare"/>
+		<Sheet name="Source Data View" url="/t/WRD10-social-media/views/SocialMediaSentimentsBenchmarkEGMobinil/SourceDataView"/>
+	</Dashboard>
+  </DashboardGroup>
+  <DashboardGroup name="Competitor Customer Acquisition" >
+	<Dashboard json:Array='true' name="Customer Acquisition Overview" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/CustomerAquisitionOverview">
+		<Sheet name="Network Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/NetworkLeads"/>
+		<Sheet name="Social Media Network Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/SocialMediaNetworkComments"/>
+		<Sheet name="Acquisition Insight (Network)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/AcquisitionInsightNetwork"/>
+		<Sheet name="Business Affairs Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/BusinessAffairsLeads"/>
+		<Sheet name="Social Media Business Affairs Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/SocialMediaBusinessAffairsComments"/>
+		<Sheet name="Acquisition Insight (Business Insight)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/AcquisitionInsightBusinessAffairs"/>
+		<Sheet name="Customer Care Leads" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/CustomerCareLeads"/>
+		<Sheet name="Social Media Customer Care Comments" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/SocialMediaCustomerCareComments"/>
+		<Sheet name="Acquisition Insight (Customer Care)" url="/t/WRD10-social-media/views/CustomerAcquisitionOverview-EGMobinil/AcquisitionInsightCustomerCare"/>
+ 	</Dashboard>
+	<Dashboard json:Array='true' name="Acquisition Network" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/Acquisition-Network">
+		<Sheet name="Etisalat Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/EtisalatAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Etisalat Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/EtisalatPotentialCustomers"/>
+		<Sheet name="Etisalat Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/EtisalatAcquisitionSummary"/>
+		<Sheet name="Etisalat Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/EtisalatSocialMediaComments"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/VodafonePotentialCustomers"/>
+		<Sheet name="Vodafone Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/VodafoneAcquisitionSummary"/>
+		<Sheet name="Vodafone Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-Network-EGMobinil/VodafoneSocialMediaComments"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Acquisition Business Affairs" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/Acquisition-BusinessAffairs">
+		<Sheet name="Etisalat Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/EtisalatAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Etisalat Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/EtisalatPotentialCustomers"/>
+		<Sheet name="Etisalat Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/EtisalatAcquisitionSummary"/>
+		<Sheet name="Etisalat Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/EtisalatSocialMediaComments"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/VodafonePotentialCustomers"/>
+		<Sheet name="Vodafone Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/VodafoneAcquisitionSummary"/>
+		<Sheet name="Vodafone Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-BusinessAffairs-EGMobinil/VodafoneSocialMediaComments"/>
+	</Dashboard>
+	<Dashboard json:Array='true' name="Acquisition Customer Care" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/Acquisition-CustomerCare">
+		<Sheet name="Etisalat Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/EtisalatAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Etisalat Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/EtisalatPotentialCustomers"/>
+		<Sheet name="Etisalat Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/EtisalatAcquisitionSummary"/>
+		<Sheet name="Etisalat Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/EtisalatSocialMediaComments"/>
+		<Sheet name="Vodafone Acquisitions from Complaining Competitor Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/VodafoneAcquisitionsfromComplainingCompetitorCustomers"/>
+		<Sheet name="Vodafone Potential Customers" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/VodafonePotentialCustomers"/>
+		<Sheet name="Vodafone Acquisition Summary" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/VodafoneAcquisitionSummary"/>
+		<Sheet name="Vodafone Social Media Comments" url="/t/WRD10-social-media/views/CompetitorCustomerAcquisition-CustomerCare-EGMobinil/VodafoneSocialMediaComments"/>
+	</Dashboard>
+  </DashboardGroup>
+</DashboardGroups>

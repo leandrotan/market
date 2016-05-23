@@ -1,0 +1,40 @@
+package com.wicom.storm.socialmedia.twitter.utils;
+
+/**
+ * Created by Charbel Hobeika on 3/2/2015.
+ */
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class JSONStringHelper {
+
+    private static final Logger logger = LoggerFactory.getLogger(JSONStringHelper.class);
+
+    public static String replaceNewlineChar(String body) {
+        logger.debug("Replacing new line characters in status json");
+        String newBody = body.replace("\\n", " ").replace("\\r", "");
+        return newBody;
+    }
+
+    public static JSONArray replaceNewlineChar(JSONArray arr) throws JSONException {
+        logger.debug("Replacing new line characters in json array");
+        for (int i=0; i<arr.length();i++) {
+            String newBody = arr.getJSONObject(i).toString().replace("\\n", " ").replace("\\r", "");
+            arr.put(i, new JSONObject(newBody));
+        }
+        return arr;
+    }
+
+    public static JSONObject replaceNewlineChar(JSONObject obj) throws JSONException {
+        logger.debug("Replacing new line characters in json object");
+        String newBody = obj.toString().replace("\\n", " ").replace("\\r", "");
+        return new JSONObject(newBody);
+    }
+
+    public static boolean hasTag(String json, String tag) throws JSONException {
+        return new JSONObject(json).has(tag);
+    }
+}

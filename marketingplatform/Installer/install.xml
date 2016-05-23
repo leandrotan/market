@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ================================================ -->
+<!--                                                  -->
+<!--  Deployment script                               -->
+<!--                                                  -->
+<!-- ================================================ -->
+<project name="installer" default="help">
+
+    <record name="install.log" loglevel="info" append="true" />
+
+    <taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" />
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+    <path id="runtime.cp">
+        <pathelement location="../bin/" />
+        <fileset dir="${ant.library.dir}" includes="antform.jar" />
+    </path>
+
+    <!-- load global properties from env.file -->
+    <var name="env.file" value="install.properties" />
+    <property file="artifacts.manifest" />
+    <property environment="env" />
+
+    <macrodef name="delete.backups">
+        <attribute name="backup.dir" />
+        <attribute name="keep" />
+        <sequential>
+            <for param="folder">
+                <path>
+                    <last count="@{keep}">
+                        <sort>
+                            <date/>
+                            <dirset dir="@{backup.dir}">
+                                <include name="*" />
+                            </dirset>
+                        </sort>
+                    </last>
+                </path>
+                <sequential>
+                    <if>
+                        <isset property="skip.list"/>
+                        <then>
+                            <var name="skip.list" value="${skip.list},@{folder}" />
+                        </then>
+                        <else>
+                            <var name="skip.list" value="@{folder}" />
+                        </else>
+                    </if>
+                </sequential>
+            </for>
+
+            <for param="folder.to.delete">
+                <path>
+                    <dirset dir="@{backup.dir}">
+                        <include name="*" />
+                    </dirset>
+                </path>
+                <sequential>
+                    <var name="keep.it" value="false"/>
+                    <for list="${skip.list}" param="folder.to.skip">
+                        <sequential>
+                            <if>
+                                <equals arg1="@{folder.to.delete}" arg2="@{folder.to.skip}"/>
+                                <then>
+                                    <var name="keep.it" value="true"/>
+                                </then>
+                            </if>
+                        </sequential>
+                    </for>
+                    <if>
+                        <istrue value="${keep.it}" />
+                        <then>
+                            <echo message="Keeping  directory @{folder.to.delete}" />
+                        </then>
+                        <else>
+                            <delete dir="@{folder.to.delete}" />
+                        </else>
+                    </if>
+                </sequential>
+            </for>
+        </sequential>
+    </macrodef>
+
+    <target name="validate-installer">
+        <fail unless="env.LIQUIBASE_HOME">LIQUIBASE_HOME must be set before executing the installer</fail>
+
+        <if>
+            <isset property="selection.env" />
+            <then>
+                <var name="env.file" value="${selection.env}" />
+            </then>
+            <else>
+                <var name="env.file" value="install.properties" />
+            </else>
+        </if>
+
+        <if>
+            <not>
+                <available file="${env.file}" property="install.prp.exists" />
+            </not>
+            <then>
+                <echo message=" " />
+                <echo message="ERROR: ${env.file} is missing." />
+                <echo message="       Rename an existing property file according to your environment. Or pass it as an execution parameter." />
+                <echo message="       Please make sure the properties inside the file are correctly defined." />
+                <echo message=" " />
+                <fail message="${env.file} is missing."/>
+            </then>
+        </if>
+
+        <if>
+            <not>
+                <istrue value="${validated}" />
+            </not>
+            <then>
+                <echo message="Using ${env.file}" />
+                <property file="${env.file}" />
+                <property file="common.properties" />
+            </then>
+        </if>
+
+        <var name="validated" value="true" />
+    </target>
+
+    <!-- - - - - - - - - - - - - - - -->
+    <!--  target: help               -->
+    <!-- - - - - - - - - - - - - - - -->
+    <target name="help">
+        <echo message="install supports the following targets" />
+        <echo message="---------------------------------------------" />
+        <echo message=" " />
+        <echo message="install-web               : Installs the WEB application." />
+        <echo message=" " />
+        <echo message=" " />
+        <echo message="Parameters:" />
+        <echo message="-Denv.file=filename       : Specifies environment property file to be used. (Default: install.properties)" />
+    </target>
+
+    <macrodef name="stop-web">
+        <sequential>
+            <echo message=" " />
+            <echo message="-----------------------------------" />
+            <echo message="Stopping web application...        " />
+            <echo message="-----------------------------------" />
+            <mkdir dir="${web.install.dir}" />
+            <copy file="app_offline.htm" todir="${web.install.dir}" />
+            <sleep seconds="30" />
+            <echo message=" " />
+            <echo message="DONE." />
+        </sequential>
+    </macrodef>
+
+    <macrodef name="start-web">
+        <sequential>
+            <echo message=" " />
+            <echo message="-----------------------------------" />
+            <echo message="Starting web application...        " />
+            <echo message="-----------------------------------" />
+            <delete file="${web.install.dir}/app_offline.htm" />
+            <echo message=" " />
+            <echo message="DONE." />
+        </sequential>
+    </macrodef>
+
+     <target name="install-web" depends="validate-installer">
+        <echo message=" " />
+        <echo message="-----------------------------------------------------------" />
+        <echo message="  INSTALL WEB APPLICATION                                  " />
+        <echo message="                                                           " />
+        <echo message="  Environment : ${env.key}                                 " />
+        <echo message="  Destination : ${web.install.dir}                         " />
+        <echo message="-----------------------------------------------------------" />
+        <echo message=" " />
+        <tstamp>
+            <format property="backup.time" pattern="yyyy-MM-dd_hh-mm-ss" />
+        </tstamp>
+        <property name="web.dated.backup.dir" location="${web.backup.dir}/${backup.time}" />
+
+        <if>
+            <available file="${web.install.dir}" property="is.web.installed" />
+            <then>
+                <if>
+                    <istrue value="${enable.web.backup}" />
+                    <then>
+                        <echo message=" " />
+                        <echo message="-----------------------------------" />
+                        <echo message="Creating WEB application backup... " />
+                        <echo message="-----------------------------------" />
+                        <echo message=" " />
+                        <echo message="Source folder: ${web.install.dir}" />
+                        <echo message="Backup folder: ${web.dated.backup.dir}" />
+                        <echo message=" " />
+                        <mkdir dir="${web.backup.dir}" />
+                        <copy todir="${web.dated.backup.dir}" verbose="${verbosity}">
+                            <fileset dir="${web.install.dir}" >
+                                <include name="**\*" />
+                            </fileset>
+                        </copy>
+                        <echo message=" " />
+                        <echo message="-----------------------------------" />
+                        <echo message="Keeping the last ${web.backups.to.keep} backups..." />
+                        <echo message="-----------------------------------" />
+                        <delete.backups backup.dir="${web.backup.dir}" keep="${web.backups.to.keep}" />
+                        <echo message=" " />
+                        <echo message=" " />
+                        <echo message="DONE." />
+                    </then>
+                    <else>
+                        <echo message=" " />
+                        <echo message="-----------------------------------" />
+                        <echo message="Skipping WEB application backup... " />
+                        <echo message="-----------------------------------" />
+                        <echo message=" " />
+                        <echo message="WEB backup is NOT enabled. " />
+                        <echo message=" " />
+                        <echo message="DONE." />
+                    </else>
+                </if>
+            </then>
+            <else>
+                <if>
+                    <istrue value="${enable.web.backup}" />
+                    <then>
+                        <echo message=" " />
+                        <echo message="-----------------------------------" />
+                        <echo message="Skipping WEB application backup... " />
+                        <echo message="-----------------------------------" />
+                        <echo message=" " />
+                        <echo message="WEB install folder ${web.install.dir} does NOT exist. " />
+                        <echo message=" " />
+                        <echo message="DONE." />
+                    </then>
+                </if>
+            </else>
+        </if>
+        <stop-web />
+        <echo message=" " />
+        <echo message="-----------------------------------" />
+        <echo message="Uninstalling existing application..." />
+        <echo message="-----------------------------------" />
+        <delete dir="${web.install.dir}" includeemptydirs="true">
+            <include name="**\*" />
+            <exclude name="app_offline.htm" />
+        </delete>
+        <echo message=" " />
+        <echo message="DONE." />
+
+        <echo message=" " />
+        <echo message="-----------------------------------" />
+        <echo message="Installing the application..." />
+        <echo message="-----------------------------------" />
+        <copy todir="${web.install.dir}" overwrite="true">
+            <fileset dir="./WebApplication">
+                <include name="**/*" />
+            </fileset>
+        </copy>
+        <echo message=" " />
+        <echo message="DONE." />
+
+        <echo message=" " />
+        <echo message="-----------------------------------" />
+        <echo message="Changing configuration files..." />
+        <echo message="-----------------------------------" />
+
+        <xmltask source="${web.install.dir}\web.config" dest="${web.install.dir}\web.config" indent="true" failWithoutMatch="true">
+            <!-- Connection strings replacement -->
+            <replace path="/configuration/appSettings/add[@key = 'tableauServerAddress']/@value" withText="${tableau.server.address}" />
+			<replace path="/configuration/appSettings/add[@key = 'tableauSiteName']/@value" withText="${tableau.site}" />
+			<replace path="/configuration/appSettings/add[@key = 'tableauProjectId']/@value" withText="${tableau.project.id}" />
+			<replace path="/configuration/appSettings/add[@key = 'ticketGeneratorURL']/@value" withText="${ticket.generator.url}" />
+        </xmltask>
+
+        <echo message=" " />
+        <echo message="DONE." />
+
+        <start-web />
+    </target>
+</project>

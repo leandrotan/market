@@ -1,0 +1,40 @@
+<configuration>
+    <property name="LOGS_HOME" value="/home/sm_user/Storm Framework/CDR_Data/" />
+    <property name="LOGS_FILENAME" value="storm.log" />
+    <property name="ARCHIVED_LOGS_FILENAME" value="storm" />
+
+    <!-- CONSOLE LOGGING if needed -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%file:%line] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- CREATING THE FILE APPENDER-->
+    <appender name="File" class="ch.qos.logback.core.rolling.RollingFileAppender" level="DEBUG">
+        <file>${LOGS_HOME}${LOGS_FILENAME}</file>
+        <Append>true</Append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%date %level [%file:%line] %msg%n</pattern> <!-- DEFINING PATTERN OF LOGGED INFORMATION-->
+        </encoder>
+
+        <!-- DEFINING ROLLING Policy to allow appending logs to the logs file until
+         the maximum size is reached, then copying it to the archived directory-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOGS_HOME}/archived/archived_${ARCHIVED_LOGS_FILENAME}.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+
+    </appender>
+
+    <!-- -->
+    <root level="WARN">
+        <appender-ref ref="File" />
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

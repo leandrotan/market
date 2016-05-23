@@ -1,0 +1,5 @@
+-Open the project using IntelliJ
+-Package the project and copy the jar to the cluster.
+-Create table cdr_data from script \src\main\resources\cdr_data.hql
+-Create directories \src\main\resources on teh cluster and copy sample file (\src\main\resources\cdr_post_data20130123_204_118088.dwh)
+-java -cp <jar archive> <FQCN> (fully qualified class name)

@@ -1,0 +1,1 @@
+ALTER TABLE facebook_accounts ADD IF NOT EXISTS PARTITION (month_key='201501') LOCATION '/user/sm_user/Social_Media/Facebook/Accounts/201501';

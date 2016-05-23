@@ -1,0 +1,6 @@
+CREATE EXTERNAL TABLE dim_audit_hivehbase(key string, audit_sid string, time_created string, date_sid string, process_id string, status string, FileName string, rowCount string, rejectedCount string)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES 
+("hbase.key.type" = "string",
+"hbase.columns.mapping" = ":key,mandatory_columns:audit_sid,mandatory_columns:time_created,mandatory_columns:date_sid,mandatory_columns:process_id,mandatory_columns:status,optional_columns:FileName,optional_columns:rowCount,optional_columns:rejectedCount",
+"hbase.table.name" = "dim_audit");

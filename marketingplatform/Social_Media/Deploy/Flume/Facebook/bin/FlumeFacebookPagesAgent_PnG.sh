@@ -1,0 +1,2 @@
+#!/bin/bash
+/etc/init.d/flume-agent $1 /home/sm_user/Social_Media/Facebook/conf/flumeFacebookPages_PnG.properties FacebookAgent_PnG --classpath /home/sm_user/Social_Media/Facebook/lib/*: -Dflume.root.logger=INFO,LOGFILE -Dflume.log.file=FlumeFacebookPagesAgent_PnG.log -Xmx128m

@@ -1,0 +1,167 @@
+﻿<script type="text/javascript" src="Html/ContactBoardDetail.js"></script>
+<link href="Html/ContactBoardDetail.css" rel="stylesheet" />
+<style>
+    #questionnaireWindow > table > thead > tr, #questionnaireWindow > table > tbody > tr
+    {
+        height: 24px !important;
+    }
+
+    #detailsWindow .k-edit-form-container {
+        width: 100%;
+    }
+
+    #detailsWindowContent {
+        padding: 10px;
+        margin-top: -15px;
+    }
+</style>
+<div id="detailsWindow" class="k-popup-edit-form k-window-content k-content" style="display: none;">
+    <div class="k-edit-form-container">
+        <div id="detailsWindowContent">
+            <div id="detailsHeader">
+                <table style="width: 100%">
+                    <tbody>
+                        <tr>
+                            <th>User account:</th>
+                            <td><span data-bind="text: selectedItem.user"></span></td>
+                            <th>Status:</th>
+                            <td>
+                                <select data-role="dropdownlist" data-value-primitive="true"
+                                    data-text-field="name"
+                                    data-value-field="name"
+                                    data-bind="source: statuses, value: selectedItem.status">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Auto-message date:</th>
+                            <td>
+                                <span data-bind="text: selectedItem.auto_message_date"></span>
+                            </td>
+                            <th>Category:</th>
+                            <td><span data-bind="text: selectedItem.original_category"></span><strong>/</strong><span data-bind="text: selectedItem.original_subcategory" style="font-size: 90%"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>User's last tweet:</th>
+                            <td>
+                                <span data-bind="text: selectedItem.date_last_tweet_received"></span>
+                                <h5 style="display: inline-block; margin: 0px; line-height: normal">
+                                    <span data-template="score-template" data-bind="source: selectedItem.last_tweet_received_score"></span>
+                                </h5>
+                            </td>
+                            <th>Last tweet sent:</th>
+                            <td>
+                                <span data-bind="text: selectedItem.date_last_tweet_sent"></span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div data-role="tabstrip" data-selected-index="1" data-animation='{"open":{"effects":"fadeIn"}}'>
+                <ul>
+                    <li class="k-state-active">Messages</li>
+                    <li>Comments</li>
+                </ul>
+                <div id="tabMessages" style="height: 350px;">
+                    <div data-role="listview" style="height:100%; overflow: auto; margin-bottom: 8px;" data-bind="source: selectedItem.details.messages" data-template="message-item-template">
+                    </div>
+                    <script id="message-item-template" type="text/x-kendo-template">
+                        <div class="message-item-template">
+                            <div class="messageType">
+                                <div data-bind="attr: {class: type}"> </div>
+                            </div>
+                            <div class="messageActions">
+                                #if(data.score){#
+                                    <h5 style="margin:0px; line-height:normal">#= renderTemplate('score-template',data.score) #</h5>
+                                # } #                    
+                                #if(data.questionnaire){#                            
+                                    <a title="#=questionnaire.reply_date?'View customer answers':'Not answered'#" 
+                                          data-bind="click: showQuestionnaire"  >
+                                        <span class="glyphicon glyphicon-#=questionnaire.reply_date?'ok-circle':'question-sign'#" aria-hidden="true"></span>
+                                        Questionnaire
+                                    </a>                                                 
+                                # } #
+                            </div>
+                            <div class="messageDetails">
+                                <a data-bind="text: from"></a><span class="timeStamp" data-bind="text: date"></span>
+                                <p data-bind="text: content" ></p>                        
+                               <a onClick="toggleMessageReplies(this)" title="View Replies" >Replies <span class="badge" data-bind="text: replies.length"></span></a>
+                                <div data-role="listview" style="display:none"  class="messageReplies" data-bind="source: replies" data-template="reply-template"></div>
+                            </div>
+                        </div>
+                    </script>
+                    <script id="reply-template" type="text/x-kendo-template">
+                        <div class="message-item-template">
+                            <div class="messageType ">
+                                <div data-bind="attr: {class: type}"> </div>
+                            </div> 
+                            <div class="messageActions">
+                                #if(data.score){#
+                                    <h5 style="margin:0px; line-height:normal">#= renderTemplate('score-template',data.score) #</h5>
+                                # } #                    
+                            </div>
+                            <div class="messageDetails">                          
+                                <a data-bind="text: from"></a><span class="timeStamp" data-bind="text: date"></span>                        
+                                <p data-bind="text: content"></p>                        
+                            </div>
+                        </div>
+                    </script>
+                    <script id="score-template" type="text/x-kendo-template">
+                        <span class="label #var scoreP=data;
+                            switch(scoreP){ case 'Positive':#label-success# break;# 
+                                #case 'Neutral':#label-default# break;# 
+                                #case 'Negative':#label-warning# break;# 
+                                #case 'Severe':#label-danger# break;# 
+                                #case 'Potential Churner':#label-danger# break;# 
+                            # } # ">#= scoreP#  
+                        </span>
+                    </script>
+                </div>
+                <div id="tabComments" style="height: 350px;">
+                    <div data-role="listview" style="max-height: 240px; overflow: auto;" data-bind="source: selectedItem.details.comments" data-template="comment-item-template">
+                    </div>
+                    <script id="comment-item-template" type="text/x-kendo-template">
+                        <div class="comment-item-template">
+                            <a class="author" data-bind="text: author"></a><span class="timeStamp" data-bind="text: date"></span>
+                            <p data-bind="text: content" ></p>
+                        </div>
+                    </script>
+                    <div style="margin-top: 8px">
+                        <textarea class="form-control" style="width: 95%; margin: 5px 2px 5px 2px;" placeholder="Enter a comment" rows="2" id="newContent"></textarea>
+                        <button data-bind="click: addComment" data-role="button">Post a new comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="k-edit-buttons k-state-default">
+            <a class="k-button k-button-icontext" href="#" id="details-close-case-button" onclick="closeClickHandler()"><span class="k-icon k-i-close"></span>Close Case</a>
+            <a class="k-button k-button-icontext" href="#" id="details-send-tweet-button" onclick="newTweetClickHandler()"><span class="k-icon k-i-pencil"></span>Send Tweet</a>
+            <a class="k-button k-primary" href="#" id="details-close-window-button" onclick="$('#detailsWindow').data('kendoWindow').close()">Close</a>
+        </div>
+    </div>
+</div>
+<div id="questionnaireWindow" style="display: none">
+    <table>
+        <thead>
+            <tr>
+                <th>Questionnarie Name:</th>
+                <td data-bind="text: questionnaire.name"></td>
+            </tr>
+            <tr>
+                <th>Replied at:</th>
+                <td data-bind="text: questionnaire.reply_date"></td>
+            </tr>
+        </thead>
+        <tbody data-template="row-template" data-bind="source: questionnaire.content"></tbody>
+    </table>
+</div>
+<script id="row-template" type="text/x-kendo-template">
+    <tr>
+        <th><span data-bind="text: label"></span>:
+        </th>
+        <td data-bind="text: response">
+        </td>        
+    </tr>
+</script>

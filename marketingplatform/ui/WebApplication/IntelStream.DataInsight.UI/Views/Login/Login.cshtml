@@ -1,0 +1,26 @@
+﻿@model Nexius.IntelStream.DataInsight.UI.Models.UserModel
+
+<div id="content">
+    @using (Html.BeginForm("Login", "Login", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { id = "loginForm", @class = "form-signin", autocomplete = "off" }))
+    {
+    
+        <div class="logo">
+            <img src="~/Images/intelStream_data_insight_big.png" alt="intelStream" width="255" height="83" />
+        </div>
+        <h3 class="form-signin-heading">Please sign in</h3>
+        
+        @Html.TextBoxFor(m => m.UserName, new { autofocus = "autofocus", required = "required", id = "loginName", placeholder = "User Name", @class = "form-control" })
+        
+        @Html.PasswordFor(m => m.Password, new { required = "required", id = "loginPassword", placeholder = "Password", @class = "form-control" })
+
+        <div class="checkbox">
+            <label>@Html.CheckBoxFor(m => m.RememberMe)
+                @Html.DisplayNameFor(m => m.RememberMe)</label>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    
+        @Html.ValidationSummary() 
+    
+    }
+</div>
